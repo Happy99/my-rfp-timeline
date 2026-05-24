@@ -1,0 +1,36 @@
+{
+  "name": "my-rfp-timeline",
+  "version": "0.1.0",
+  "description": "Personal companion site for Rock for People 2026: custom timeline, picks, .ics export.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "scrape": "tsx scripts/scrape.ts",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/preact": "^4.0.13",
+    "@preact/signals": "^2.0.2",
+    "@tailwindcss/vite": "^4.1.7",
+    "astro": "^5.7.10",
+    "preact": "^10.26.5",
+    "tailwindcss": "^4.1.7"
+  },
+  "devDependencies": {
+    "@fontsource/bungee-inline": "^5.2.5",
+    "@fontsource/ibm-plex-mono": "^5.2.5",
+    "@fontsource/permanent-marker": "^5.2.5",
+    "@fontsource/rubik-mono-one": "^5.2.5",
+    "@types/node": "^25.9.1",
+    "cheerio": "^1.0.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "zod": "^3.25.7"
+  }
+}

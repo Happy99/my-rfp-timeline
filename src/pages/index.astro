@@ -1,0 +1,12 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import { App } from '~/components/App';
+import lineupJson from '~/data/lineup.json';
+import { LineupSchema } from '~/data/schema';
+
+const lineup = LineupSchema.parse(lineupJson);
+---
+
+<Layout title="My RfP 2026 — pick your sets">
+  <App lineup={lineup} client:load />
+</Layout>

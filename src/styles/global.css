@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "@fontsource/rubik-mono-one/400.css";
+@import "@fontsource/bungee-inline/400.css";
+@import "@fontsource/permanent-marker/400.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/700.css";
+
+@theme {
+  --color-ink: #0a0a0a;
+  --color-paper: #f4ead0;
+  --color-paper-dark: #e6d8a8;
+  --color-blood: #c41e1e;
+  --color-blood-dark: #8b0d0d;
+  --color-neon: #fff03a;
+  --color-pink: #ff3da6;
+  --font-display: "Rubik Mono One", "Bungee Inline", system-ui, sans-serif;
+  --font-accent: "Bungee Inline", "Rubik Mono One", system-ui, sans-serif;
+  --font-marker: "Permanent Marker", cursive;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    min-height: 100dvh;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(10, 10, 10, 0.08) 1px, transparent 0),
+      radial-gradient(circle at 13px 17px, rgba(10, 10, 10, 0.04) 1px, transparent 0);
+    background-size: 6px 6px, 24px 24px;
+    overflow-x: hidden;
+  }
+}

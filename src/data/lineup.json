@@ -1,0 +1,2594 @@
+{
+  "festival": "Rock for People",
+  "year": 2026,
+  "location": "Hradec Králové, CZ",
+  "sourceUrl": "https://rockforpeople.cz/en/harmonogram/",
+  "scrapedAt": "2026-05-24T22:16:42.793Z",
+  "days": [
+    {
+      "date": "2026-06-10",
+      "label": "Wednesday 10.6.",
+      "shortLabel": "Wed 10.6.",
+      "stages": [
+        {
+          "name": "Mastercard Stage",
+          "sets": [
+            {
+              "id": "2026-06-10-stage-76-magnolia-park-1340",
+              "slug": "magnolia-park",
+              "artist": "Magnolia Park",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/MagnoliaPark_PressPhoto_HiRes-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/magnolia-park/",
+              "start": "13:40",
+              "end": "14:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-76-the-wombats-1535",
+              "slug": "the-wombats",
+              "artist": "The Wombats",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Sept-2025-current-Photo-03-08-2025-00-15-57-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-wombats/",
+              "start": "15:35",
+              "end": "16:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-76-the-pretty-reckless-1810",
+              "slug": "the-pretty-reckless",
+              "artist": "The Pretty Reckless",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/Snimek-obrazovky-2025-09-23-v-12.18.07-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/the-pretty-reckless/",
+              "start": "18:10",
+              "end": "19:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-76-gorillaz-2130",
+              "slug": "gorillaz",
+              "artist": "Gorillaz",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Snimek-obrazovky-2025-10-14-v-9.30.09-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/gorillaz/",
+              "start": "21:30",
+              "end": "23:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Rock for People Stage",
+          "sets": [
+            {
+              "id": "2026-06-10-stage-77-we-came-as-romans-1250",
+              "slug": "we-came-as-romans",
+              "artist": "We Came As Romans",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/WCAR_JW_2025_109_RT-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/we-came-as-romans/",
+              "start": "12:50",
+              "end": "13:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-77-bloodywood-1430",
+              "slug": "bloodywood",
+              "artist": "Bloodywood",
+              "country": "IN",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/80b9c767_BloodywoodBandDSC_4832-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/bloodywood/",
+              "start": "14:30",
+              "end": "15:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-77-megadeth-1640",
+              "slug": "megadeth",
+              "artist": "Megadeth",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/Photo-Credit-Ross-Halfin-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/megadeth/",
+              "start": "16:40",
+              "end": "17:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-77-electric-callboy-1940",
+              "slug": "electric-callboy",
+              "artist": "Electric Callboy",
+              "country": "DE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/Electric-Callboy-2025-01-HR-by-Christian-Ripkens-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/electric-callboy/",
+              "start": "19:40",
+              "end": "21:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "E2 Stage",
+          "sets": [
+            {
+              "id": "2026-06-10-stage-78-special-guest-by-mastercard-1130",
+              "slug": "special-guest-by-mastercard",
+              "artist": "Special Guest by Mastercard",
+              "country": null,
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/special-guest-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
+              "start": "11:30",
+              "end": "12:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-78-kublai-khan-tx-1305",
+              "slug": "kublai-khan-tx",
+              "artist": "Kublai Khan TX",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/KKTX-2025-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/kublai-khan-tx/",
+              "start": "13:05",
+              "end": "13:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-78-voila-1445",
+              "slug": "voila",
+              "artist": "VOILÀ",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/4212ff9e_2025E-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/voila/",
+              "start": "14:45",
+              "end": "15:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-78-lenka-dusilova-ld_50-a-host-david-koller-1625",
+              "slug": "lenka-dusilova-ld_50-a-host-david-koller",
+              "artist": "Lenka Dusilová: LD_50 a host David Koller",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/LD_50_MORE_RAW_02-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/lenka-dusilova-ld_50-a-host-david-koller/",
+              "start": "16:25",
+              "end": "17:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-78-die-spitz-2000",
+              "slug": "die-spitz",
+              "artist": "Die Spitz",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Credit-Pooneh-Ghana-@poonehghana-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/die-spitz/",
+              "start": "20:00",
+              "end": "21:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-78-trivium-2300",
+              "slug": "trivium",
+              "artist": "Trivium",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Trivium_Festival-2026-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/trivium/",
+              "start": "23:00",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-78-joey-valence-brae-0030",
+              "slug": "joey-valence-brae",
+              "artist": "Joey Valence & Brae",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Additional-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/joey-valence-brae/",
+              "start": "00:30",
+              "end": "01:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "Petr Svoboda Stage",
+          "sets": [
+            {
+              "id": "2026-06-10-stage-79-byt-cislo-4-1220",
+              "slug": "byt-cislo-4",
+              "artist": "Byt číslo 4",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/1279975-800-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/byt-cislo-4/",
+              "start": "12:20",
+              "end": "13:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-79-mouth-culture-1355",
+              "slug": "mouth-culture",
+              "artist": "Mouth Culture",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Photo-21-06-2024-16-43-09-1-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/mouth-culture/",
+              "start": "13:55",
+              "end": "14:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-79-nevertel-1535",
+              "slug": "nevertel",
+              "artist": "Nevertel",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Nevertel-Promos-KIRKS-1-8-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/nevertel/",
+              "start": "15:35",
+              "end": "16:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-79-gurriers-1715",
+              "slug": "gurriers",
+              "artist": "Gurriers",
+              "country": "IE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Gurriers_credit_Hunter-Long-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/gurriers/",
+              "start": "17:15",
+              "end": "18:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-79-water-from-your-eyes-1855",
+              "slug": "water-from-your-eyes",
+              "artist": "Water From Your Eyes",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/WFYE_promo-photo-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/water-from-your-eyes/",
+              "start": "18:55",
+              "end": "19:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-79-tchert-2145",
+              "slug": "tchert",
+              "artist": "Tchert",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/by-Danny-Nguyen-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/tchert/",
+              "start": "21:45",
+              "end": "22:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "ČT art Stage",
+          "sets": [
+            {
+              "id": "2026-06-10-stage-80-circus-brothers-1245",
+              "slug": "circus-brothers",
+              "artist": "Circus Brothers",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/image003-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/circus-brothers/",
+              "start": "12:45",
+              "end": "13:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-80-tolstoys-1415",
+              "slug": "tolstoys",
+              "artist": "Tolstoys",
+              "country": "DE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/2026_01_10_Tolstoys_Berlin_c_Dominik_Friess-0612-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/tolstoys/",
+              "start": "14:15",
+              "end": "15:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-80-ecca-vandal-1545",
+              "slug": "ecca-vandal",
+              "artist": "Ecca Vandal",
+              "country": "AU",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/0538c82f_LEAD-PRESS-PHOTO-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/ecca-vandal/",
+              "start": "15:45",
+              "end": "16:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-80-as-it-is-1715",
+              "slug": "as-it-is",
+              "artist": "As It Is",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/1.-MAIN-AsItis_LYWAFY_Promos_AshleaBea_019-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/as-it-is/",
+              "start": "17:15",
+              "end": "18:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-80-tx2-1845",
+              "slug": "tx2",
+              "artist": "TX2",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/redbluealt-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/tx2/",
+              "start": "18:45",
+              "end": "19:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-80-genesis-owusu-2010",
+              "slug": "genesis-owusu",
+              "artist": "Genesis Owusu",
+              "country": "AU",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/0431edfe__LEAD-250616_GENESISOWUSU_WU-NIVERSE_17_4508-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/genesis-owusu/",
+              "start": "20:10",
+              "end": "20:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-80-boundaries-2135",
+              "slug": "boundaries",
+              "artist": "Boundaries",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Boundaries-2025-by-Sarah-Holick-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/boundaries/",
+              "start": "21:35",
+              "end": "22:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-80-thrown-2300",
+              "slug": "thrown",
+              "artist": "thrown",
+              "country": "SE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/thrown-Press-Photo-2024-Credits-Aslak-Junttu-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/thrown/",
+              "start": "23:00",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-80-alyx-holcombe-0030",
+              "slug": "alyx-holcombe",
+              "artist": "Alyx Holcombe",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/AlyxHolcombe_AliaThomas-8-kopie-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/alyx-holcombe/",
+              "start": "00:30",
+              "end": "02:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "Reflex Stage",
+          "sets": [
+            {
+              "id": "2026-06-10-stage-81-planetrox-2026-1205",
+              "slug": "planetrox-2026",
+              "artist": "Planetrox 2026",
+              "country": "DE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/670431357_1522163496382396_4941946477189953841_n-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/planetrox-2026/",
+              "start": "12:05",
+              "end": "12:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-81-planetrox-2026-1345",
+              "slug": "planetrox-2026",
+              "artist": "Planetrox 2026",
+              "country": "DE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/670431357_1522163496382396_4941946477189953841_n-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/planetrox-2026/",
+              "start": "13:45",
+              "end": "14:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-81-planetrox-2026-1555",
+              "slug": "planetrox-2026",
+              "artist": "Planetrox 2026",
+              "country": "DE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/670431357_1522163496382396_4941946477189953841_n-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/planetrox-2026/",
+              "start": "15:55",
+              "end": "16:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-81-planetrox-2026-1845",
+              "slug": "planetrox-2026",
+              "artist": "Planetrox 2026",
+              "country": "DE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/670431357_1522163496382396_4941946477189953841_n-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/planetrox-2026/",
+              "start": "18:45",
+              "end": "19:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-81-monodream-2115",
+              "slug": "monodream",
+              "artist": "Mønødream",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/MONO-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/monodream/",
+              "start": "21:15",
+              "end": "22:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-81-zuzane-navarove-do-nebes-0000",
+              "slug": "zuzane-navarove-do-nebes",
+              "artist": "Zuzaně Navarové do nebes",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/FKH_MK_Zuzane-Navarove-do-nebes_Anna-Bartolotti-29-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/zuzane-navarove-do-nebes/",
+              "start": "00:00",
+              "end": "01:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "EcoFlow Stage",
+          "sets": [
+            {
+              "id": "2026-06-10-stage-82-special-guest-by-mastercard-1135",
+              "slug": "special-guest-by-mastercard",
+              "artist": "Special Guest by Mastercard",
+              "country": null,
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/special-guest-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
+              "start": "11:35",
+              "end": "12:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-82-bazzookas-1245",
+              "slug": "bazzookas",
+              "artist": "Bazzookas",
+              "country": "NL",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/bazzookas.1702980480-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/bazzookas/",
+              "start": "12:45",
+              "end": "13:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-82-cherryholt-1440",
+              "slug": "cherryholt",
+              "artist": "Cherryholt",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Cherryholt-Press-Shot-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/cherryholt/",
+              "start": "14:40",
+              "end": "15:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-82-kasparek-v-rohliku-1710",
+              "slug": "kasparek-v-rohliku",
+              "artist": "Kašpárek v rohlíku",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Kasparek-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/kasparek-v-rohliku/",
+              "start": "17:10",
+              "end": "17:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-82-nestor-alvarez-original-gravity-allstars-1930",
+              "slug": "nestor-alvarez-original-gravity-allstars",
+              "artist": "Néstor Álvarez & Original Gravity Allstars",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Unknown-16-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/nestor-alvarez-original-gravity-allstars/",
+              "start": "19:30",
+              "end": "20:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-82-supermodel-2040",
+              "slug": "supermodel",
+              "artist": "supermodel*",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/supermodel_-2026-cred.-Ashlan-Grey-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/supermodel/",
+              "start": "20:40",
+              "end": "21:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-82-pendl-2315",
+              "slug": "pendl",
+              "artist": "Pendl",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Pendl-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/pendl/",
+              "start": "23:15",
+              "end": "00:45",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Karaoke Stage",
+          "sets": [
+            {
+              "id": "2026-06-10-stage-83-special-guest-by-mastercard-1010",
+              "slug": "special-guest-by-mastercard",
+              "artist": "Special Guest by Mastercard",
+              "country": null,
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/special-guest-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
+              "start": "10:10",
+              "end": "10:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "label": "Thursday 11.6.",
+      "shortLabel": "Thu 11.6.",
+      "stages": [
+        {
+          "name": "Mastercard Stage",
+          "sets": [
+            {
+              "id": "2026-06-11-stage-76-set-it-off-1215",
+              "slug": "set-it-off",
+              "artist": "Set It Off",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/SET-IT-OFF-2025-2000px-CREDIT-@s_h_u_r-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/set-it-off/",
+              "start": "12:15",
+              "end": "13:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-76-the-plot-in-you-1355",
+              "slug": "the-plot-in-you",
+              "artist": "The Plot In You",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/TPIY_11-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-plot-in-you/",
+              "start": "13:55",
+              "end": "14:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-76-breaking-benjamin-1550",
+              "slug": "breaking-benjamin",
+              "artist": "Breaking Benjamin",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/BB_Promo_V7-1-copy-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/breaking-benjamin/",
+              "start": "15:50",
+              "end": "16:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-76-babymetal-1810",
+              "slug": "babymetal",
+              "artist": "BABYMETAL",
+              "country": "JP",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Snimek-obrazovky-2025-10-14-v-10.04.22.png",
+              "url": "https://rockforpeople.cz/en/lineup/babymetal/",
+              "start": "18:10",
+              "end": "19:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-76-limp-bizkit-2130",
+              "slug": "limp-bizkit",
+              "artist": "Limp Bizkit",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Limp-Bizkit-photo-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/limp-bizkit/",
+              "start": "21:30",
+              "end": "23:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Rock for People Stage",
+          "sets": [
+            {
+              "id": "2026-06-11-stage-77-thornhill-1125",
+              "slug": "thornhill",
+              "artist": "Thornhill",
+              "country": "AU",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/TH-spotify-photo-release-week-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/thornhill/",
+              "start": "11:25",
+              "end": "12:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-77-wohnout-1305",
+              "slug": "wohnout",
+              "artist": "Wohnout",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/wA-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/wohnout/",
+              "start": "13:05",
+              "end": "13:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-77-social-distortion-1445",
+              "slug": "social-distortion",
+              "artist": "Social Distortion",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/full-band-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/social-distortion/",
+              "start": "14:45",
+              "end": "15:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-77-all-time-low-1655",
+              "slug": "all-time-low",
+              "artist": "All Time Low",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Sitting-1-Final-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/all-time-low/",
+              "start": "16:55",
+              "end": "17:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-77-papa-roach-1940",
+              "slug": "papa-roach",
+              "artist": "Papa Roach",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/PapaRoach2024-2_Credit_Bryson_Roatch1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/papa-roach/",
+              "start": "19:40",
+              "end": "21:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "E2 Stage",
+          "sets": [
+            {
+              "id": "2026-06-11-stage-78-mc-gey-live-band-1125",
+              "slug": "mc-gey-live-band",
+              "artist": "MC Gey & Live Band",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/DSC00295-Enhanced-NR-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/mc-gey-live-band/",
+              "start": "11:25",
+              "end": "12:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-78-letlive-1305",
+              "slug": "letlive",
+              "artist": "letlive.",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/ExtendedBackGround_DSC8455_djaybrawner-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/letlive/",
+              "start": "13:05",
+              "end": "13:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-78-catch-your-breath-1445",
+              "slug": "catch-your-breath",
+              "artist": "Catch Your Breath",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/0H0A7076-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/catch-your-breath/",
+              "start": "14:45",
+              "end": "15:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-78-blood-incantation-1625",
+              "slug": "blood-incantation",
+              "artist": "Blood Incantation",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/Blood-Incantation_Julian-Weigand_1-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/blood-incantation/",
+              "start": "16:25",
+              "end": "17:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-78-destroy-boys-1805",
+              "slug": "destroy-boys",
+              "artist": "Destroy Boys",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/DeBo-Press-Shot-2025-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/destroy-boys/",
+              "start": "18:05",
+              "end": "18:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-78-yard-act-1950",
+              "slug": "yard-act",
+              "artist": "Yard Act",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/e0da0004_YA-47-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/yard-act/",
+              "start": "19:50",
+              "end": "20:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-78-the-all-american-rejects-2300",
+              "slug": "the-all-american-rejects",
+              "artist": "The All-American Rejects",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/The-All-American-Rejects-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-all-american-rejects/",
+              "start": "23:00",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-78-gleb-0045",
+              "slug": "gleb",
+              "artist": "Gleb",
+              "country": "SK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/IMG_2254-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/gleb/",
+              "start": "00:45",
+              "end": "01:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "Petr Svoboda Stage",
+          "sets": [
+            {
+              "id": "2026-06-11-stage-79-banks-arcade-1215",
+              "slug": "banks-arcade",
+              "artist": "Banks Arcade",
+              "country": "NZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/BANKS-PRESS-SHOT-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/banks-arcade/",
+              "start": "12:15",
+              "end": "13:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-79-the-pretty-wild-1355",
+              "slug": "the-pretty-wild",
+              "artist": "The Pretty Wild",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/2026-TPW-Press-Pic.-Credit-Joshua-Shultz-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-pretty-wild/",
+              "start": "13:55",
+              "end": "14:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-79-radio-free-alice-1535",
+              "slug": "radio-free-alice",
+              "artist": "Radio Free Alice",
+              "country": "AU",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/RFA-Press-Pic-7-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/radio-free-alice/",
+              "start": "15:35",
+              "end": "16:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-79-last-train-1715",
+              "slug": "last-train",
+              "artist": "Last Train",
+              "country": "FR",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/03-Last-Train-2026-_-Credits-Jeremy-Martineau-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/last-train/",
+              "start": "17:15",
+              "end": "18:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-79-barns-courtney-1855",
+              "slug": "barns-courtney",
+              "artist": "Barns Courtney",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/PRESHOW-44-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/barns-courtney/",
+              "start": "18:55",
+              "end": "19:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-79-deki-alem-2050",
+              "slug": "deki-alem",
+              "artist": "Deki Alem",
+              "country": "SE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/PhotobyNoahAgemo-5-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/deki-alem/",
+              "start": "20:50",
+              "end": "21:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-79-dizzlove-2215",
+              "slug": "dizzlove",
+              "artist": "Dizzlove",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/1378797-800-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/dizzlove/",
+              "start": "22:15",
+              "end": "23:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "ČT art Stage",
+          "sets": [
+            {
+              "id": "2026-06-11-stage-80-quicksand-1720",
+              "slug": "quicksand",
+              "artist": "Quicksand",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/QS-PROMO-1-A.F.-Cortes-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/quicksand/",
+              "start": "17:20",
+              "end": "18:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-80-james-cole-idea-1845",
+              "slug": "james-cole-idea",
+              "artist": "James Cole & Idea",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/DONE_portrety_0032-Adam-Lukas-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/james-cole-idea/",
+              "start": "18:45",
+              "end": "19:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-80-etta-marcus-2010",
+              "slug": "etta-marcus",
+              "artist": "Etta Marcus",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/LEAD-AR_ETTAMARCUS_-33crop_FINAL-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/etta-marcus/",
+              "start": "20:10",
+              "end": "20:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-80-vltava-2135",
+              "slug": "vltava",
+              "artist": "Vltava",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/DSCF1434-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/vltava/",
+              "start": "21:35",
+              "end": "22:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-80-melrose-avenue-2300",
+              "slug": "melrose-avenue",
+              "artist": "Melrose Avenue",
+              "country": "AU",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/75a9292d_Melrose-Avenue-press-shot-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/melrose-avenue/",
+              "start": "23:00",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Reflex Stage",
+          "sets": [
+            {
+              "id": "2026-06-11-stage-81-frankie-the-deadbeats-1845",
+              "slug": "frankie-the-deadbeats",
+              "artist": "Frankie & The Deadbeats",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/1271165-800-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/frankie-the-deadbeats/",
+              "start": "18:45",
+              "end": "19:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-81-the-fialky-2120",
+              "slug": "the-fialky",
+              "artist": "The Fialky",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/THE_FIALKY-promo2026-5-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-fialky/",
+              "start": "21:20",
+              "end": "22:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-81-desade-x-denoi-2315",
+              "slug": "desade-x-denoi",
+              "artist": "DeSade X Denoi",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/002-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/desade-x-denoi/",
+              "start": "23:15",
+              "end": "00:15",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-81-klubovna-afterparty-0030",
+              "slug": "klubovna-afterparty",
+              "artist": "Klubovna Afterparty",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/663582492_963265932874602_3175897267811795507_n-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/klubovna-afterparty/",
+              "start": "00:30",
+              "end": "02:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "EcoFlow Stage",
+          "sets": [
+            {
+              "id": "2026-06-11-stage-82-indoor-foxes-1455",
+              "slug": "indoor-foxes",
+              "artist": "Indoor Foxes",
+              "country": "SCT",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/IMG_2993-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/indoor-foxes/",
+              "start": "14:55",
+              "end": "15:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-82-woda-a-dekorace-1715",
+              "slug": "woda-a-dekorace",
+              "artist": "Wóďa a Dekorace",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/0-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/woda-a-dekorace/",
+              "start": "17:15",
+              "end": "17:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-82-wyfe-1930",
+              "slug": "wyfe",
+              "artist": "Wyfe",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/WYFE-00_PROMO-Petra-Charvatova-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/wyfe/",
+              "start": "19:30",
+              "end": "20:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-82-special-guest-by-mastercard-2300",
+              "slug": "special-guest-by-mastercard",
+              "artist": "Special Guest by Mastercard",
+              "country": null,
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/special-guest-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
+              "start": "23:00",
+              "end": "23:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Karaoke Stage",
+          "sets": [
+            {
+              "id": "2026-06-11-stage-83-special-guest-by-mastercard-1010",
+              "slug": "special-guest-by-mastercard",
+              "artist": "Special Guest by Mastercard",
+              "country": null,
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/special-guest-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
+              "start": "10:10",
+              "end": "10:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "label": "Friday 12.6.",
+      "shortLabel": "Fri 12.6.",
+      "stages": [
+        {
+          "name": "Mastercard Stage",
+          "sets": [
+            {
+              "id": "2026-06-12-stage-76-basement-1320",
+              "slug": "basement",
+              "artist": "Basement",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Basement-Studio-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/basement/",
+              "start": "13:20",
+              "end": "14:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-76-ben-cristovao-1500",
+              "slug": "ben-cristovao",
+              "artist": "Ben Cristovao",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/1T1A4499-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/ben-cristovao/",
+              "start": "15:00",
+              "end": "15:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-76-tom-morello-1640",
+              "slug": "tom-morello",
+              "artist": "Tom Morello",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Soldier-Lead-Press-Shot-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/tom-morello/",
+              "start": "16:40",
+              "end": "17:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-76-a-day-to-remember-1900",
+              "slug": "a-day-to-remember",
+              "artist": "A Day To Remember",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/11/main-press-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/a-day-to-remember/",
+              "start": "19:00",
+              "end": "20:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-76-bring-me-the-horizon-2145",
+              "slug": "bring-me-the-horizon",
+              "artist": "Bring Me The Horizon",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/BMTHVV11-_MAIN-IMAGE_-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/bring-me-the-horizon/",
+              "start": "21:45",
+              "end": "23:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Rock for People Stage",
+          "sets": [
+            {
+              "id": "2026-06-12-stage-77-south-arcade-1230",
+              "slug": "south-arcade",
+              "artist": "South Arcade",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/SOUTH-ARCADE-HIGH-RES-99_page-0001-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/south-arcade/",
+              "start": "12:30",
+              "end": "13:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-77-gatecreeper-1410",
+              "slug": "gatecreeper",
+              "artist": "Gatecreeper",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Gatecreeper-by-Hayley-Rippy-5-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/gatecreeper/",
+              "start": "14:10",
+              "end": "14:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-77-dinosaur-pile-up-1550",
+              "slug": "dinosaur-pile-up",
+              "artist": "Dinosaur Pile-Up",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/DPU-Approved-2025-Thomas-Coe-Brooker-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/dinosaur-pile-up/",
+              "start": "15:50",
+              "end": "16:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-77-bilmuri-1745",
+              "slug": "bilmuri",
+              "artist": "Bilmuri",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/Snimek-obrazovky-2025-09-23-v-11.00.34-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/bilmuri/",
+              "start": "17:45",
+              "end": "18:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-77-wolf-alice-2030",
+              "slug": "wolf-alice",
+              "artist": "Wolf Alice",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Wolf-Alice_WidePressShot1_credit-Rachel-Fleminger-Hudson-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/wolf-alice/",
+              "start": "20:30",
+              "end": "21:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-77-three-days-grace-2330",
+              "slug": "three-days-grace",
+              "artist": "Three Days Grace",
+              "country": "CA",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/THREE-DAYS-GRACE5117-copy-scaled-1-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/three-days-grace/",
+              "start": "23:30",
+              "end": "01:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "E2 Stage",
+          "sets": [
+            {
+              "id": "2026-06-12-stage-78-ego-kill-talent-1200",
+              "slug": "ego-kill-talent",
+              "artist": "Ego Kill Talent",
+              "country": "BR",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Kopie-souboru-Press_Shot_Ego-Kill-Talent-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/ego-kill-talent/",
+              "start": "12:00",
+              "end": "12:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-78-trash-boat-1340",
+              "slug": "trash-boat",
+              "artist": "Trash Boat",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/MKD08361-Edit-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/trash-boat/",
+              "start": "13:40",
+              "end": "14:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-78-dying-wish-1520",
+              "slug": "dying-wish",
+              "artist": "Dying Wish",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/MAIN-PROMO-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/dying-wish/",
+              "start": "15:20",
+              "end": "16:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-78-jiri-pavlica-hradistan-1700",
+              "slug": "jiri-pavlica-hradistan",
+              "artist": "Jiří Pavlica & Hradišťan",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/1000059564-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/jiri-pavlica-hradistan/",
+              "start": "17:00",
+              "end": "17:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-78-ivri-1840",
+              "slug": "ivri",
+              "artist": "ivri",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/ivri-press-photo-2025-2-1500x1500-1-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/ivri/",
+              "start": "18:40",
+              "end": "19:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-78-high-vis-2030",
+              "slug": "high-vis",
+              "artist": "High Vis",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/00f5145b_DAIS231-HighVis-GuidedTour-LP-Reverse-creditJamesEdson-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/high-vis/",
+              "start": "20:30",
+              "end": "21:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-78-tata-bojs-0000",
+              "slug": "tata-bojs",
+              "artist": "Tata Bojs",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Tata_Bojs-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/tata-bojs/",
+              "start": "00:00",
+              "end": "01:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            },
+            {
+              "id": "2026-06-12-stage-78-svdden-death-0155",
+              "slug": "svdden-death",
+              "artist": "SVDDEN DEATH",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/DSC03210-Edit-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/svdden-death/",
+              "start": "01:55",
+              "end": "03:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "Petr Svoboda Stage",
+          "sets": [
+            {
+              "id": "2026-06-12-stage-79-the-clause-1250",
+              "slug": "the-clause",
+              "artist": "The Clause",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/01b4fa85_MAIN-PRESS-PICTURE-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/the-clause/",
+              "start": "12:50",
+              "end": "13:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-79-ankor-1430",
+              "slug": "ankor",
+              "artist": "Ankor",
+              "country": "ES",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/ANKOR-2025_1-MOON-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/ankor/",
+              "start": "14:30",
+              "end": "15:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-79-dave-lofts-1610",
+              "slug": "dave-lofts",
+              "artist": "Dave Lofts",
+              "country": "IE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/e0c86cce_Dave-Lofts-Photo-1-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/dave-lofts/",
+              "start": "16:10",
+              "end": "16:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-79-private-school-1750",
+              "slug": "private-school",
+              "artist": "Private School",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/IMG_4656-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/private-school/",
+              "start": "17:50",
+              "end": "18:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-79-unpeople-1945",
+              "slug": "unpeople",
+              "artist": "unpeople",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Garden-single-ZakPinchin-DSC00213-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/unpeople/",
+              "start": "19:45",
+              "end": "20:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-79-kvietah-2130",
+              "slug": "kvietah",
+              "artist": "Kvietah",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Kvietah-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/kvietah/",
+              "start": "21:30",
+              "end": "22:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-79-vower-2315",
+              "slug": "vower",
+              "artist": "VOWER",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/DSC09836-Edit_c-Silvja-Vil-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/vower/",
+              "start": "23:15",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-79-glare-0110",
+              "slug": "glare",
+              "artist": "Glare",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/DIGITALSRL_07-16-2025_GLARE_ROUGH-TRADE_00060-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/glare/",
+              "start": "01:10",
+              "end": "01:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "ČT art Stage",
+          "sets": [
+            {
+              "id": "2026-06-12-stage-80-lottery-winners-1920",
+              "slug": "lottery-winners",
+              "artist": "Lottery Winners",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/6b8630c2_LW-Burning-House-Press-Shot-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/lottery-winners/",
+              "start": "19:20",
+              "end": "20:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-80-zero-936-2045",
+              "slug": "zero-936",
+              "artist": "Zero 9:36",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/Snimek-obrazovky-2025-09-23-190347-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/zero-936/",
+              "start": "20:45",
+              "end": "21:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-80-fvlcrvm-2210",
+              "slug": "fvlcrvm",
+              "artist": "FVLCRVM",
+              "country": "SK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/FVLCRVM-by-Matus-Barta-A3-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/fvlcrvm/",
+              "start": "22:10",
+              "end": "22:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-80-gaerea-2335",
+              "slug": "gaerea",
+              "artist": "Gaerea",
+              "country": "PT",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Gaerea-Loss-bandphoto-byChantik-Photography-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/gaerea/",
+              "start": "23:35",
+              "end": "00:20",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-80-ventolin-0100",
+              "slug": "ventolin",
+              "artist": "Ventolin",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/1317958-800-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/ventolin/",
+              "start": "01:00",
+              "end": "02:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "Reflex Stage",
+          "sets": [
+            {
+              "id": "2026-06-12-stage-81-starter-teige-1845",
+              "slug": "starter-teige",
+              "artist": "Startér: teige",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/teige-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/starter-teige/",
+              "start": "18:45",
+              "end": "19:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-81-marie-april-2245",
+              "slug": "marie-april",
+              "artist": "Marie April",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/1379304-800-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/marie-april/",
+              "start": "22:45",
+              "end": "23:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-81-madface-0030",
+              "slug": "madface",
+              "artist": "Madface",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Madface3-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/madface/",
+              "start": "00:30",
+              "end": "01:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            },
+            {
+              "id": "2026-06-12-stage-81-leduy-bea-0130",
+              "slug": "leduy-bea",
+              "artist": "Leduy + Bea",
+              "country": "VN",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/leduy-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/leduy-bea/",
+              "start": "01:30",
+              "end": "03:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "EcoFlow Stage",
+          "sets": [
+            {
+              "id": "2026-06-12-stage-82-any-young-mechanic-1550",
+              "slug": "any-young-mechanic",
+              "artist": "Any Young Mechanic",
+              "country": "AU",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/AYM-PRESS-19-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/any-young-mechanic/",
+              "start": "15:50",
+              "end": "16:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-82-ue-1740",
+              "slug": "ue",
+              "artist": "UE",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/UE-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/ue/",
+              "start": "17:40",
+              "end": "18:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-82-fvck-kvlt-2030",
+              "slug": "fvck-kvlt",
+              "artist": "FVCK_KVLT",
+              "country": "SK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/FVCK_KVLT-2026-by-Karina-Golisova-002-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/fvck-kvlt/",
+              "start": "20:30",
+              "end": "21:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-82-noisy-pots-2330",
+              "slug": "noisy-pots",
+              "artist": "Noisy Pots",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Noisy-Pots-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/noisy-pots/",
+              "start": "23:30",
+              "end": "00:30",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Karaoke Stage",
+          "sets": [
+            {
+              "id": "2026-06-12-stage-83-special-guest-by-mastercard-1010",
+              "slug": "special-guest-by-mastercard",
+              "artist": "Special Guest by Mastercard",
+              "country": null,
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/special-guest-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
+              "start": "10:10",
+              "end": "10:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "label": "Saturday 13.6.",
+      "shortLabel": "Sat 13.6.",
+      "stages": [
+        {
+          "name": "Mastercard Stage",
+          "sets": [
+            {
+              "id": "2026-06-13-stage-76-kid-kapichi-1400",
+              "slug": "kid-kapichi",
+              "artist": "Kid Kapichi",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/e05fe1ee_LEAD-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/kid-kapichi/",
+              "start": "14:00",
+              "end": "14:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-76-alessi-rose-1540",
+              "slug": "alessi-rose",
+              "artist": "Alessi Rose",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Alessi_Rose-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/alessi-rose/",
+              "start": "15:40",
+              "end": "16:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-76-don-broco-1720",
+              "slug": "don-broco",
+              "artist": "Don Broco",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/don-broco-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/don-broco/",
+              "start": "17:20",
+              "end": "18:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-76-nothing-but-thieves-1930",
+              "slug": "nothing-but-thieves",
+              "artist": "Nothing But Thieves",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Snimek-obrazovky-2025-10-14-v-10.30.16.png",
+              "url": "https://rockforpeople.cz/en/lineup/nothing-but-thieves/",
+              "start": "19:30",
+              "end": "20:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-76-halsey-2210",
+              "slug": "halsey",
+              "artist": "Halsey",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/HALSEY_BACK_TO_THE_BADLANDS_2025-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/halsey/",
+              "start": "22:10",
+              "end": "23:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Rock for People Stage",
+          "sets": [
+            {
+              "id": "2026-06-13-stage-77-police-symphony-orchestra-1310",
+              "slug": "police-symphony-orchestra",
+              "artist": "Police Symphony Orchestra",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/PSO_Zkouska_Generalka_219-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/police-symphony-orchestra/",
+              "start": "13:10",
+              "end": "13:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-77-bury-tomorrow-1450",
+              "slug": "bury-tomorrow",
+              "artist": "Bury Tomorrow",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Bury-Tomorrow-main-credit-Zak-Pinchin-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/bury-tomorrow/",
+              "start": "14:50",
+              "end": "15:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-77-sofian-medjmedj-1630",
+              "slug": "sofian-medjmedj",
+              "artist": "Sofian Medjmedj",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/10/Snimek-obrazovky-2025-10-14-v-11.35.02.png",
+              "url": "https://rockforpeople.cz/en/lineup/sofian-medjmedj/",
+              "start": "16:30",
+              "end": "17:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-77-yonaka-1825",
+              "slug": "yonaka",
+              "artist": "Yonaka",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/yonaka-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/yonaka/",
+              "start": "18:25",
+              "end": "19:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-77-blackbear-2050",
+              "slug": "blackbear",
+              "artist": "blackbear",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/IMG_5026-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/blackbear/",
+              "start": "20:50",
+              "end": "21:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-77-within-temptation-2345",
+              "slug": "within-temptation",
+              "artist": "Within Temptation",
+              "country": "NL",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/IMG_0391-V3-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/within-temptation/",
+              "start": "23:45",
+              "end": "01:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "E2 Stage",
+          "sets": [
+            {
+              "id": "2026-06-13-stage-78-calva-louise-1230",
+              "slug": "calva-louise",
+              "artist": "Calva Louise",
+              "country": "NZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/PROMO-PIC-2-by-Henry-Calvert-2-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/calva-louise/",
+              "start": "12:30",
+              "end": "13:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-78-berlin-manson-1410",
+              "slug": "berlin-manson",
+              "artist": "Berlin Manson",
+              "country": "SK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/promo-foto_BM-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/berlin-manson/",
+              "start": "14:10",
+              "end": "14:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-78-i-killed-the-prom-queen-1550",
+              "slug": "i-killed-the-prom-queen",
+              "artist": "I Killed The Prom Queen",
+              "country": "AU",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Prom-2025-portrait-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/i-killed-the-prom-queen/",
+              "start": "15:50",
+              "end": "16:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-78-malevolence-1730",
+              "slug": "malevolence",
+              "artist": "Malevolence",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/Main-Tour-Press-Pic-Ramsey-Ramone-Credit-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/malevolence/",
+              "start": "17:30",
+              "end": "18:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-78-president-1910",
+              "slug": "president",
+              "artist": "PRESIDENT",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/president-nonperformance-57-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/president/",
+              "start": "19:10",
+              "end": "19:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-78-silent-planet-2050",
+              "slug": "silent-planet",
+              "artist": "Silent Planet",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Promo-by-Aaron-Marsh-3-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/silent-planet/",
+              "start": "20:50",
+              "end": "21:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-78-babyshambles-0000",
+              "slug": "babyshambles",
+              "artist": "Babyshambles",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Photo-credit-Daniel-Quesada-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/babyshambles/",
+              "start": "00:00",
+              "end": "01:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            },
+            {
+              "id": "2026-06-13-stage-78-delta-heavy-0145",
+              "slug": "delta-heavy",
+              "artist": "Delta Heavy",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Delta-Heavy-2v2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/delta-heavy/",
+              "start": "01:45",
+              "end": "03:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "Petr Svoboda Stage",
+          "sets": [
+            {
+              "id": "2026-06-13-stage-79-grade-2-1320",
+              "slug": "grade-2",
+              "artist": "Grade 2",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Grade-2-Press-Shot-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/grade-2/",
+              "start": "13:20",
+              "end": "14:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-79-westside-cowboy-1500",
+              "slug": "westside-cowboy",
+              "artist": "Westside Cowboy",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/19c8872c_Press-Shot-Hi-Res-WestSide-Cowboy-c-Joe-Moss-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/westside-cowboy/",
+              "start": "15:00",
+              "end": "15:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-79-overpass-1640",
+              "slug": "overpass",
+              "artist": "overpass",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/18b1a0e5_DSC03128-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/overpass/",
+              "start": "16:40",
+              "end": "17:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-79-keo-1820",
+              "slug": "keo",
+              "artist": "Keo",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Keo-Press-Sep-25_Cropped-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/keo/",
+              "start": "18:20",
+              "end": "19:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-79-spill-tab-2000",
+              "slug": "spill-tab",
+              "artist": "spill tab",
+              "country": "TH",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Lead-Press-Shot-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/spill-tab/",
+              "start": "20:00",
+              "end": "20:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-79-rezn-2315",
+              "slug": "rezn",
+              "artist": "REZN",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/REZN-show-promo-2024-Alexa-Viscius-FULL-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/rezn/",
+              "start": "23:15",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-79-alt-blk-era-0100",
+              "slug": "alt-blk-era",
+              "artist": "ALT BLK ERA",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/a21c67c2_Photo-Credit-Chiara-Ceccaioni-56-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/alt-blk-era/",
+              "start": "01:00",
+              "end": "01:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "ČT art Stage",
+          "sets": [
+            {
+              "id": "2026-06-13-stage-80-venus-grrrls-1900",
+              "slug": "venus-grrrls",
+              "artist": "VENUS GRRRLS",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Photo-by-Misha-Warren-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/venus-grrrls/",
+              "start": "19:00",
+              "end": "19:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-80-snayx-2030",
+              "slug": "snayx",
+              "artist": "SNAYX",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Photo-1-Credit-Leila-Rummery-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/snayx/",
+              "start": "20:30",
+              "end": "21:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-80-the-900-tony-hawks-pro-skater-cover-band-2155",
+              "slug": "the-900-tony-hawks-pro-skater-cover-band",
+              "artist": "The 900: Tony Hawk's Pro Skater Cover Band",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Image-18-08-2024-at-00.12-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-900-tony-hawks-pro-skater-cover-band/",
+              "start": "21:55",
+              "end": "22:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-80-holywatr-2320",
+              "slug": "holywatr",
+              "artist": "Holywatr",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/IMG_8060-Edit-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/holywatr/",
+              "start": "23:20",
+              "end": "00:20",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-80-the-funeral-portrait-0100",
+              "slug": "the-funeral-portrait",
+              "artist": "The Funeral Portrait",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/TFP-2026-Photo-WIDE-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-funeral-portrait/",
+              "start": "01:00",
+              "end": "02:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "Reflex Stage",
+          "sets": [
+            {
+              "id": "2026-06-13-stage-81-overgrown-1925",
+              "slug": "overgrown",
+              "artist": "Overgrown",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Overgrown-2026-Approved-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/overgrown/",
+              "start": "19:25",
+              "end": "20:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-81-hopes-2150",
+              "slug": "hopes",
+              "artist": "Hopes",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/2_by_David-Sklenar.jpg-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/hopes/",
+              "start": "21:50",
+              "end": "22:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-81-post-hudba-2330",
+              "slug": "post-hudba",
+              "artist": "post-hudba",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/1332705-800-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/post-hudba/",
+              "start": "23:30",
+              "end": "00:15",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-81-satysvleckou-0115",
+              "slug": "satysvleckou",
+              "artist": "ŠatySVlečkou",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/SatySVleckou_MAIN_credit_BoskoviceFestival-3-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/satysvleckou/",
+              "start": "01:15",
+              "end": "03:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
+            }
+          ]
+        },
+        {
+          "name": "EcoFlow Stage",
+          "sets": [
+            {
+              "id": "2026-06-13-stage-82-acid-row-2-1630",
+              "slug": "acid-row-2",
+              "artist": "Acid Row",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/AR_PROMO_FOTO_22-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/acid-row-2/",
+              "start": "16:30",
+              "end": "17:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-82-simon-opp-1820",
+              "slug": "simon-opp",
+              "artist": "Simon Opp",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/FOT03052-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/simon-opp/",
+              "start": "18:20",
+              "end": "19:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-82-elektrick-mann-2125",
+              "slug": "elektrick-mann",
+              "artist": "Elektrïck Mann",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/Electric-mann-©-vaclavbaca.cz-15-of-61-2-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/elektrick-mann/",
+              "start": "21:25",
+              "end": "22:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Karaoke Stage",
+          "sets": [
+            {
+              "id": "2026-06-13-stage-83-special-guest-by-mastercard-1010",
+              "slug": "special-guest-by-mastercard",
+              "artist": "Special Guest by Mastercard",
+              "country": null,
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/special-guest-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
+              "start": "10:10",
+              "end": "10:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "label": "Sunday 14.6.",
+      "shortLabel": "Sun 14.6.",
+      "stages": [
+        {
+          "name": "Mastercard Stage",
+          "sets": [
+            {
+              "id": "2026-06-14-stage-76-loathe-1415",
+              "slug": "loathe",
+              "artist": "Loathe",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/Adobe-Express-file-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/loathe/",
+              "start": "14:15",
+              "end": "15:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-76-queensryche-1555",
+              "slug": "queensryche",
+              "artist": "Queensrÿche",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Queensryche_4-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/queensryche/",
+              "start": "15:55",
+              "end": "16:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-76-alter-bridge-1750",
+              "slug": "alter-bridge",
+              "artist": "Alter Bridge",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/ALTER-BRIDGE_Chuck_Brueckmann1-2-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/alter-bridge/",
+              "start": "17:50",
+              "end": "18:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-76-iron-maiden-2040",
+              "slug": "iron-maiden",
+              "artist": "Iron Maiden",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/IRON-MAIDEN-LINEUP-2026-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/iron-maiden/",
+              "start": "20:40",
+              "end": "22:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Rock for People Stage",
+          "sets": [
+            {
+              "id": "2026-06-14-stage-77-blackgold-1325",
+              "slug": "blackgold",
+              "artist": "BLACKGOLD",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/NEW-BLACKGOLD-NOV-2025-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/blackgold/",
+              "start": "13:25",
+              "end": "14:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-77-alice-1505",
+              "slug": "alice",
+              "artist": "Alice & Dan Bárta",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Alice_02-1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/alice/",
+              "start": "15:05",
+              "end": "15:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-77-knocked-loose-1645",
+              "slug": "knocked-loose",
+              "artist": "Knocked Loose",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/Knocked-Loose-photo-Church-AK2I0954-Landscape-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/knocked-loose/",
+              "start": "16:45",
+              "end": "17:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-77-saxon-1905",
+              "slug": "saxon",
+              "artist": "Saxon",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/SAXON-Promo-2023-Credit-Lea-Stephan-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/saxon/",
+              "start": "19:05",
+              "end": "20:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "E2 Stage",
+          "sets": [
+            {
+              "id": "2026-06-14-stage-78-the-molotovs-1310",
+              "slug": "the-molotovs",
+              "artist": "The Molotovs",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Album-Art-Press-Shot-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-molotovs/",
+              "start": "13:10",
+              "end": "13:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-78-militarie-gun-1440",
+              "slug": "militarie-gun",
+              "artist": "Militarie Gun",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/cbd37928_MilitarieGun_PC-NolanKnight_DIGITAL017165-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/militarie-gun/",
+              "start": "14:40",
+              "end": "15:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-78-man-with-a-mission-1610",
+              "slug": "man-with-a-mission",
+              "artist": "Man With A Mission",
+              "country": "JP",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/MWAM_Promo2024-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/man-with-a-mission/",
+              "start": "16:10",
+              "end": "16:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-78-sleep-theory-1745",
+              "slug": "sleep-theory",
+              "artist": "Sleep Theory",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/MAIN_SleepTheory_JonathanWeiner_621_Web-184-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/sleep-theory/",
+              "start": "17:45",
+              "end": "18:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-78-alexisonfire-1920",
+              "slug": "alexisonfire",
+              "artist": "Alexisonfire",
+              "country": "CA",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/Alexisonfire_221022_LondonBrixtonAcademy_DB_0349-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/alexisonfire/",
+              "start": "19:20",
+              "end": "20:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-78-god-is-an-astronaut-2300",
+              "slug": "god-is-an-astronaut",
+              "artist": "God Is An Astronaut",
+              "country": "IE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/God_Is_An_Astronaut1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/god-is-an-astronaut/",
+              "start": "23:00",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Petr Svoboda Stage",
+          "sets": [
+            {
+              "id": "2026-06-14-stage-79-chrpy-1355",
+              "slug": "chrpy",
+              "artist": "CHRPY",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/DSC01525-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/chrpy/",
+              "start": "13:55",
+              "end": "14:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-79-gridiron-1525",
+              "slug": "gridiron",
+              "artist": "Gridiron",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/Gridiron-Photo-Feb-27-2024-5-42-36-PM-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/gridiron/",
+              "start": "15:25",
+              "end": "16:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-79-the-lilacs-1655",
+              "slug": "the-lilacs",
+              "artist": "The Lilacs",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/12/7e88f82b_SPRING-TOUR-ASSET-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-lilacs/",
+              "start": "16:55",
+              "end": "17:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-79-linka-moja-1830",
+              "slug": "linka-moja",
+              "artist": "Linka Moja",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/35c2839e_LM-picture-fur-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/linka-moja/",
+              "start": "18:30",
+              "end": "19:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-79-reflections-of-karma-2020",
+              "slug": "reflections-of-karma",
+              "artist": "Reflections of Karma",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/ROK_photo-by-Jan-Nozicka-8-2024_hi-res_01-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/reflections-of-karma/",
+              "start": "20:20",
+              "end": "21:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-79-midrift-2200",
+              "slug": "midrift",
+              "artist": "Midrift",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/Midrift-Main-Promo-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/midrift/",
+              "start": "22:00",
+              "end": "22:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "ČT art Stage",
+          "sets": [
+            {
+              "id": "2026-06-14-stage-80-vianova-1845",
+              "slug": "vianova",
+              "artist": "vianova",
+              "country": "DE",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2025/09/db2758fc_Vianova-5721_byTimi_Ikene-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/vianova/",
+              "start": "18:45",
+              "end": "19:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-80-rain-city-drive-2100",
+              "slug": "rain-city-drive",
+              "artist": "Rain City Drive",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/RCD-New-Promo-2-3-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/rain-city-drive/",
+              "start": "21:00",
+              "end": "21:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-80-scene-queen-2315",
+              "slug": "scene-queen",
+              "artist": "Scene Queen",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/496841802_18502987429003482_4716717679012597398_n-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/scene-queen/",
+              "start": "23:15",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Reflex Stage",
+          "sets": [
+            {
+              "id": "2026-06-14-stage-81-cold-meat-party-1745",
+              "slug": "cold-meat-party",
+              "artist": "Cold Meat Party",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/IMG_2386-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/cold-meat-party/",
+              "start": "17:45",
+              "end": "18:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-81-white-fruit-honey-2015",
+              "slug": "white-fruit-honey",
+              "artist": "White Fruit Honey",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/foto-2-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/white-fruit-honey/",
+              "start": "20:15",
+              "end": "21:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "EcoFlow Stage",
+          "sets": [
+            {
+              "id": "2026-06-14-stage-82-frozen-poppyhead-1325",
+              "slug": "frozen-poppyhead",
+              "artist": "Frozen Poppyhead",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/FP-EVERFROST-PROMO-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/frozen-poppyhead/",
+              "start": "13:25",
+              "end": "14:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-82-lunarsea-1515",
+              "slug": "lunarsea",
+              "artist": "Lunarsea",
+              "country": "IT",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/03/LUNARSEA_Pic1-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/lunarsea/",
+              "start": "15:15",
+              "end": "15:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-82-florence-black-1710",
+              "slug": "florence-black",
+              "artist": "Florence Black",
+              "country": "UK",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/537e5007_Press-PHOTO-Credit-Jack-Collin-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/florence-black/",
+              "start": "17:10",
+              "end": "17:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-82-the-atavists-1935",
+              "slug": "the-atavists",
+              "artist": "The Atavists",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/367708513_992770598712236_6695695588295597553_n-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/the-atavists/",
+              "start": "19:35",
+              "end": "20:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-82-n-o-h-a-2315",
+              "slug": "n-o-h-a",
+              "artist": "N.O.H.A.",
+              "country": "CZ",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/02/image0-1-360x264.jpeg",
+              "url": "https://rockforpeople.cz/en/lineup/n-o-h-a/",
+              "start": "23:15",
+              "end": "00:00",
+              "crossesMidnight": true,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        },
+        {
+          "name": "Karaoke Stage",
+          "sets": [
+            {
+              "id": "2026-06-14-stage-83-hollow-suns-1010",
+              "slug": "hollow-suns",
+              "artist": "Hollow Suns",
+              "country": "JP",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/00_Main_-Horizontal-360x264.png",
+              "url": "https://rockforpeople.cz/en/lineup/hollow-suns/",
+              "start": "10:10",
+              "end": "10:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-83-excide-1130",
+              "slug": "excide",
+              "artist": "Excide",
+              "country": "US",
+              "image": "https://rockforpeople.cz/wp-content/uploads/2026/04/IMG_0646-360x264.jpg",
+              "url": "https://rockforpeople.cz/en/lineup/excide/",
+              "start": "11:30",
+              "end": "12:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stages": [
+    "Mastercard Stage",
+    "Rock for People Stage",
+    "E2 Stage",
+    "Petr Svoboda Stage",
+    "ČT art Stage",
+    "Reflex Stage",
+    "EcoFlow Stage",
+    "Karaoke Stage"
+  ]
+}
