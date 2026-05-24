@@ -15,3 +15,8 @@ npx tsx scripts/verify.ts   # smoke tests
 ```
 
 Re-run `npm run scrape` whenever the festival updates the schedule, then rebuild.
+
+## Disclaimer
+
+This is an **unofficial fan-made project**. It is **not affiliated with, endorsed by, sponsored by, or in any way officially connected to Rock for People**, its organisers, or any of the artists listed. The schedule data is read from the publicly available [rockforpeople.cz](https://rockforpeople.cz) website for personal, non-commercial use only. All festival, stage, artist, and band names belong to their respective rights holders. No permission has been requested or granted by the festival or any of its associated parties. If you represent Rock for People or any rights holder and have concerns, please open an issue and the project will be adjusted or taken down.
+
