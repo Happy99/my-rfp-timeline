@@ -8,5 +8,5 @@ const lineup = LineupSchema.parse(lineupJson);
 ---
 
 <Layout title="My RfP 2026 — pick your sets">
-  <App lineup={lineup} client:load />
+  <App lineup={lineup} client:only="preact" />
 </Layout>

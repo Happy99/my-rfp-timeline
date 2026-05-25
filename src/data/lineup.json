@@ -3,7 +3,7 @@
   "year": 2026,
   "location": "Hradec Králové, CZ",
   "sourceUrl": "https://rockforpeople.cz/en/harmonogram/",
-  "scrapedAt": "2026-05-24T22:16:42.793Z",
+  "scrapedAt": "2026-05-25T18:52:11.488Z",
   "days": [
     {
       "date": "2026-06-10",
@@ -575,6 +575,42 @@
               "end": "10:50",
               "crossesMidnight": false,
               "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-83-karaoke-1130",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "11:30",
+              "end": "12:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-83-karaoke-1245",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "12:45",
+              "end": "13:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-10-stage-83-karaoke-1440",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "14:40",
+              "end": "15:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
             }
           ]
         }
@@ -909,6 +945,42 @@
           "name": "ČT art Stage",
           "sets": [
             {
+              "id": "2026-06-11-stage-80-losers-cirque-company-konkurz-1115",
+              "slug": "losers-cirque-company-konkurz",
+              "artist": "Losers Cirque Company – Konkurz",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/losers-cirque-company-konkurz/",
+              "start": "11:15",
+              "end": "12:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-80-jezkovy-stopy-1310",
+              "slug": "jezkovy-stopy",
+              "artist": "Orchestr Ježkovy stopy",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/jezkovy-stopy/",
+              "start": "13:10",
+              "end": "13:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-80-hyde-park-civilizace-1440",
+              "slug": "hyde-park-civilizace",
+              "artist": "ČT: Na dosah s Danielem Stachem",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/hyde-park-civilizace/",
+              "start": "14:40",
+              "end": "16:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
               "id": "2026-06-11-stage-80-quicksand-1720",
               "slug": "quicksand",
               "artist": "Quicksand",
@@ -967,12 +1039,60 @@
               "end": "00:00",
               "crossesMidnight": true,
               "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-80-the-prague-burlesque-show-velvet-hammer-0045",
+              "slug": "the-prague-burlesque-show-velvet-hammer",
+              "artist": "The Prague Burlesque Show: Velvet Hammer",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/the-prague-burlesque-show-velvet-hammer/",
+              "start": "00:45",
+              "end": "01:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 1
             }
           ]
         },
         {
           "name": "Reflex Stage",
           "sets": [
+            {
+              "id": "2026-06-11-stage-81-ai-mozek-a-rocknroll-cz-only-1215",
+              "slug": "ai-mozek-a-rocknroll-cz-only",
+              "artist": "AI, mozek a rock’n’roll",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/ai-mozek-a-rocknroll-cz-only/",
+              "start": "12:15",
+              "end": "13:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-81-headliner-posledni-hudebni-masakry-cz-only-1350",
+              "slug": "headliner-posledni-hudebni-masakry-cz-only",
+              "artist": "Headliner: Hudební masakry",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/headliner-posledni-hudebni-masakry-cz-only/",
+              "start": "13:50",
+              "end": "14:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-81-reflex-poprask-1550",
+              "slug": "reflex-poprask",
+              "artist": "Reflex: Poprask",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/reflex-poprask/",
+              "start": "15:50",
+              "end": "16:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
             {
               "id": "2026-06-11-stage-81-frankie-the-deadbeats-1845",
               "slug": "frankie-the-deadbeats",
@@ -1026,6 +1146,30 @@
         {
           "name": "EcoFlow Stage",
           "sets": [
+            {
+              "id": "2026-06-11-stage-82-god-save-the-drama-queen-1130",
+              "slug": "god-save-the-drama-queen",
+              "artist": "God Save The Drama Queen",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/god-save-the-drama-queen/",
+              "start": "11:30",
+              "end": "12:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-82-lomnicke-chave-1305",
+              "slug": "lomnicke-chave",
+              "artist": "Lomnické Čháve",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/lomnicke-chave/",
+              "start": "13:05",
+              "end": "13:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
             {
               "id": "2026-06-11-stage-82-indoor-foxes-1455",
               "slug": "indoor-foxes",
@@ -1088,6 +1232,42 @@
               "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
               "start": "10:10",
               "end": "10:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-83-karaoke-1130",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "11:30",
+              "end": "12:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-83-karaoke-1300",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "13:00",
+              "end": "13:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-11-stage-83-karaoke-1440",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "14:40",
+              "end": "15:25",
               "crossesMidnight": false,
               "startCalendarOffsetDays": 0
             }
@@ -1448,6 +1628,66 @@
           "name": "ČT art Stage",
           "sets": [
             {
+              "id": "2026-06-12-stage-80-30-rocku-for-people-cz-only-1120",
+              "slug": "30-rocku-for-people-cz-only",
+              "artist": "30 Ro(c)ků for People",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/30-rocku-for-people-cz-only/",
+              "start": "11:20",
+              "end": "12:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-80-kuchynske-porno-cz-only-1305",
+              "slug": "kuchynske-porno-cz-only",
+              "artist": "Kuchyňské porno",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/kuchynske-porno-cz-only/",
+              "start": "13:05",
+              "end": "14:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-80-az-kviz-1450",
+              "slug": "az-kviz",
+              "artist": "AZ-kvíz",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/az-kviz/",
+              "start": "14:50",
+              "end": "15:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-80-bozejaci-1620",
+              "slug": "bozejaci",
+              "artist": "Božejáci",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/bozejaci/",
+              "start": "16:20",
+              "end": "17:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-80-stand-up-comedy-tatty-macleod-en-only-1750",
+              "slug": "stand-up-comedy-tatty-macleod-en-only",
+              "artist": "Stand-up Comedy: Tatty Macleod (EN ONLY)",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/stand-up-comedy-tatty-macleod-en-only/",
+              "start": "17:50",
+              "end": "18:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
               "id": "2026-06-12-stage-80-lottery-winners-1920",
               "slug": "lottery-winners",
               "artist": "Lottery Winners",
@@ -1513,6 +1753,54 @@
           "name": "Reflex Stage",
           "sets": [
             {
+              "id": "2026-06-12-stage-81-ct-dulezitost-verejnopravniho-vysilani-cz-only-1130",
+              "slug": "ct-dulezitost-verejnopravniho-vysilani-cz-only",
+              "artist": "ČT: Důležitost veřejnoprávního vysílání",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/ct-dulezitost-verejnopravniho-vysilani-cz-only/",
+              "start": "11:30",
+              "end": "12:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-81-reflex-prostor-x-cz-only-1315",
+              "slug": "reflex-prostor-x-cz-only",
+              "artist": "Reflex: Prostor X",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/reflex-prostor-x-cz-only/",
+              "start": "13:15",
+              "end": "14:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-81-culture-for-future-muze-hudba-menit-svet-cz-only-1455",
+              "slug": "culture-for-future-muze-hudba-menit-svet-cz-only",
+              "artist": "Culture for Future: Může hudba měnit svět?",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/culture-for-future-muze-hudba-menit-svet-cz-only/",
+              "start": "14:55",
+              "end": "15:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-81-the-studio-32-musical-comedy-show-1635",
+              "slug": "the-studio-32-musical-comedy-show",
+              "artist": "The Studio 32 (Musical) Comedy Show! (EN ONLY)",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/the-studio-32-musical-comedy-show/",
+              "start": "16:35",
+              "end": "17:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
               "id": "2026-06-12-stage-81-starter-teige-1845",
               "slug": "starter-teige",
               "artist": "Startér: teige",
@@ -1565,6 +1853,30 @@
         {
           "name": "EcoFlow Stage",
           "sets": [
+            {
+              "id": "2026-06-12-stage-82-the-underground-comedy-1230",
+              "slug": "the-underground-comedy",
+              "artist": "Underground Comedy Club",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/the-underground-comedy/",
+              "start": "12:30",
+              "end": "13:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-82-sestry-chalupovy-1410",
+              "slug": "sestry-chalupovy",
+              "artist": "Sestry Chalupovy",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/sestry-chalupovy/",
+              "start": "14:10",
+              "end": "14:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
             {
               "id": "2026-06-12-stage-82-any-young-mechanic-1550",
               "slug": "any-young-mechanic",
@@ -1627,6 +1939,42 @@
               "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
               "start": "10:10",
               "end": "10:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-83-karaoke-1130",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "11:30",
+              "end": "12:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-83-karaoke-1410",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "14:10",
+              "end": "14:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-12-stage-83-karaoke-1550",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "15:50",
+              "end": "16:35",
               "crossesMidnight": false,
               "startCalendarOffsetDays": 0
             }
@@ -1975,6 +2323,66 @@
           "name": "ČT art Stage",
           "sets": [
             {
+              "id": "2026-06-13-stage-80-svatba-jiriho-kary-remastered-cz-only-1115",
+              "slug": "svatba-jiriho-kary-remastered-cz-only",
+              "artist": "Svatba Jiřího Káry (Remastered)",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/svatba-jiriho-kary-remastered-cz-only/",
+              "start": "11:15",
+              "end": "12:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-80-ct-tanecni-skola-stardance-1220",
+              "slug": "ct-tanecni-skola-stardance",
+              "artist": "ČT: Taneční škola StarDance",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/ct-tanecni-skola-stardance/",
+              "start": "12:20",
+              "end": "13:05",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-80-az-kviz-1350",
+              "slug": "az-kviz",
+              "artist": "AZ-kvíz",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/az-kviz/",
+              "start": "13:50",
+              "end": "14:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-80-na-stojaka-cz-only-1530",
+              "slug": "na-stojaka-cz-only",
+              "artist": "Na stojáka",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/na-stojaka-cz-only/",
+              "start": "15:30",
+              "end": "16:30",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-80-pinkbus-hezky-cesky-cz-only-1715",
+              "slug": "pinkbus-hezky-cesky-cz-only",
+              "artist": "PINKBUS: Hezky česky",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/pinkbus-hezky-cesky-cz-only/",
+              "start": "17:15",
+              "end": "18:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
               "id": "2026-06-13-stage-80-venus-grrrls-1900",
               "slug": "venus-grrrls",
               "artist": "VENUS GRRRLS",
@@ -2040,6 +2448,66 @@
           "name": "Reflex Stage",
           "sets": [
             {
+              "id": "2026-06-13-stage-81-diky-ze-muzem-ma-byt-kultura-apoliticka-cz-only-1130",
+              "slug": "diky-ze-muzem-ma-byt-kultura-apoliticka-cz-only",
+              "artist": "F-Talk Díky, že můžem: Má být kultura (a)politická?",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/diky-ze-muzem-ma-byt-kultura-apoliticka-cz-only/",
+              "start": "11:30",
+              "end": "12:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-81-prague-pride-v-roce-2026-co-slavime-a-za-co-jeste-bojujeme-cz-only-1230",
+              "slug": "prague-pride-v-roce-2026-co-slavime-a-za-co-jeste-bojujeme-cz-only",
+              "artist": "Prague Pride v roce 2026: Co slavíme a za co ještě bojujeme?",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/prague-pride-v-roce-2026-co-slavime-a-za-co-jeste-bojujeme-cz-only/",
+              "start": "12:30",
+              "end": "13:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-81-nevypust-dusi-emoce-jako-spojenec-cz-only-1355",
+              "slug": "nevypust-dusi-emoce-jako-spojenec-cz-only",
+              "artist": "Nevypusť duši: Emoce jako spojenec",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/nevypust-dusi-emoce-jako-spojenec-cz-only/",
+              "start": "13:55",
+              "end": "14:40",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-81-headliner-puda-pravda-o-rock-for-people-1535",
+              "slug": "headliner-puda-pravda-o-rock-for-people",
+              "artist": "Headliner: Půda",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/headliner-puda-pravda-o-rock-for-people/",
+              "start": "15:35",
+              "end": "16:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-81-reflex-padni-komu-padni-1715",
+              "slug": "reflex-padni-komu-padni",
+              "artist": "Reflex: Padni komu padni",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/reflex-padni-komu-padni/",
+              "start": "17:15",
+              "end": "18:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
               "id": "2026-06-13-stage-81-overgrown-1925",
               "slug": "overgrown",
               "artist": "Overgrown",
@@ -2093,6 +2561,30 @@
           "name": "EcoFlow Stage",
           "sets": [
             {
+              "id": "2026-06-13-stage-82-cimbalova-muzika-friska-1125",
+              "slug": "cimbalova-muzika-friska",
+              "artist": "Cimbálová muzika Friška",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/cimbalova-muzika-friska/",
+              "start": "11:25",
+              "end": "12:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-82-slam-poetry-slamateri-1310",
+              "slug": "slam-poetry-slamateri",
+              "artist": "Slam Poetry: Slamatéři",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/slam-poetry-slamateri/",
+              "start": "13:10",
+              "end": "13:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
               "id": "2026-06-13-stage-82-acid-row-2-1630",
               "slug": "acid-row-2",
               "artist": "Acid Row",
@@ -2142,6 +2634,42 @@
               "url": "https://rockforpeople.cz/en/lineup/special-guest-by-mastercard/",
               "start": "10:10",
               "end": "10:50",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-83-karaoke-1130",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "11:30",
+              "end": "12:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-83-karaoke-1315",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "13:15",
+              "end": "14:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-13-stage-83-karaoke-1450",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "14:50",
+              "end": "15:35",
               "crossesMidnight": false,
               "startCalendarOffsetDays": 0
             }
@@ -2418,6 +2946,54 @@
           "name": "ČT art Stage",
           "sets": [
             {
+              "id": "2026-06-14-stage-80-kmeny-thrash-metal-1245",
+              "slug": "kmeny-thrash-metal",
+              "artist": "Kmeny – Thrash metal",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/kmeny-thrash-metal/",
+              "start": "12:45",
+              "end": "13:15",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-80-az-kviz-iron-maiden-edition-cz-only-1410",
+              "slug": "az-kviz-iron-maiden-edition-cz-only",
+              "artist": "AZ-Kvíz – Iron Maiden Edition",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/az-kviz-iron-maiden-edition-cz-only/",
+              "start": "14:10",
+              "end": "15:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-80-losers-cirque-company-onyx-1550",
+              "slug": "losers-cirque-company-onyx",
+              "artist": "Losers Cirque Company – Onyx",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/losers-cirque-company-onyx/",
+              "start": "15:50",
+              "end": "16:20",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-80-groove-army-royal-squad-1710",
+              "slug": "groove-army-royal-squad",
+              "artist": "Groove Army: Royal Squad",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/groove-army-royal-squad/",
+              "start": "17:10",
+              "end": "18:00",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
               "id": "2026-06-14-stage-80-vianova-1845",
               "slug": "vianova",
               "artist": "vianova",
@@ -2458,6 +3034,42 @@
         {
           "name": "Reflex Stage",
           "sets": [
+            {
+              "id": "2026-06-14-stage-81-noty-vole-feat-jiri-hrdina-1240",
+              "slug": "noty-vole-feat-jiri-hrdina",
+              "artist": "Headliner: NOTY VOLE!",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/noty-vole-feat-jiri-hrdina/",
+              "start": "12:40",
+              "end": "13:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-81-slam-poetry-show-1410",
+              "slug": "slam-poetry-show",
+              "artist": "Slam Poetry Show",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/slam-poetry-show/",
+              "start": "14:10",
+              "end": "14:55",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-81-ceska-metalova-scena-v-80-a-90-letech-cz-only-1550",
+              "slug": "ceska-metalova-scena-v-80-a-90-letech-cz-only",
+              "artist": "Česká metalová scéna v 80. a 90. letech",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/ceska-metalova-scena-v-80-a-90-letech-cz-only/",
+              "start": "15:50",
+              "end": "16:35",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
             {
               "id": "2026-06-14-stage-81-cold-meat-party-1745",
               "slug": "cold-meat-party",
@@ -2573,6 +3185,42 @@
               "url": "https://rockforpeople.cz/en/lineup/excide/",
               "start": "11:30",
               "end": "12:10",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-83-karaoke-1240",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "12:40",
+              "end": "13:25",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-83-karaoke-1500",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "15:00",
+              "end": "15:45",
+              "crossesMidnight": false,
+              "startCalendarOffsetDays": 0
+            },
+            {
+              "id": "2026-06-14-stage-83-karaoke-1645",
+              "slug": "karaoke",
+              "artist": "Karaoke",
+              "country": null,
+              "image": null,
+              "url": "https://rockforpeople.cz/en/art-program/karaoke/",
+              "start": "16:45",
+              "end": "17:30",
               "crossesMidnight": false,
               "startCalendarOffsetDays": 0
             }

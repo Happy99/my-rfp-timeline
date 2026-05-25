@@ -49,7 +49,7 @@ async function fetchHtml(url: string): Promise<string> {
 }
 
 function slugFromUrl(href: string): string | null {
-  const m = href.match(/\/lineup\/([^/]+)\/?$/);
+  const m = href.match(/\/(?:lineup|art-program)\/([^/]+)\/?$/);
   return m ? decodeURIComponent(m[1]!) : null;
 }
 
@@ -137,14 +137,18 @@ function scrapeSchedule(html: string, enrich: Map<string, EnrichRow>): Day[] {
         if (!stageName) return;
 
         $(stageEl)
-          .find('.timetable__entry[data-type="lineup"]')
+          .find('.timetable__entry')
           .each((_, entryEl) => {
             const $entry = $(entryEl);
+            const dataType = $entry.attr('data-type');
+            if (dataType !== 'lineup' && dataType !== 'program') return;
             const start = timeStringFromAttr($entry.attr('data-start-time'));
             const end = timeStringFromAttr($entry.attr('data-end-time'));
             if (!start || !end) return;
 
-            const $a = $entry.find('a[href*="/lineup/"]').first();
+            const $a = $entry
+              .find('a[href*="/lineup/"], a[href*="/art-program/"]')
+              .first();
             const href = $a.attr('href');
             if (!href) return;
             const slug = slugFromUrl(href);
