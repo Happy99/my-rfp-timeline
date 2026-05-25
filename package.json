@@ -28,6 +28,8 @@
     "@fontsource/permanent-marker": "^5.2.5",
     "@fontsource/rubik-mono-one": "^5.2.5",
     "@types/node": "^25.9.1",
+    "@vite-pwa/assets-generator": "^1.0.2",
+    "@vite-pwa/astro": "^1.2.0",
     "cheerio": "^1.0.0",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
