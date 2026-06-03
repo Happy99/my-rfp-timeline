@@ -88,6 +88,19 @@ export const pickersBySetId = computed(() => {
   return map;
 });
 
+export const pickerMemberIdsBySetId = computed(() => {
+  const map = new Map<string, string[]>();
+  for (const pick of roomPicks.value) {
+    const list = map.get(pick.set_id) ?? [];
+    if (!list.includes(pick.member_id)) list.push(pick.member_id);
+    map.set(pick.set_id, list);
+  }
+  for (const [setId, ids] of map) {
+    map.set(setId, [...ids].sort());
+  }
+  return map;
+});
+
 export const roomMemberCount = computed(() => {
   const ids = new Set(roomPicks.value.map((p) => p.member_id));
   return ids.size;

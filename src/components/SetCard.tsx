@@ -1,9 +1,11 @@
 import type { Set as FestSet } from '~/data/schema';
 import { spotifySearchUrl, youtubeMusicSearchUrl } from '~/lib/musicLinks';
+import { getOrCreateMemberId } from '~/lib/member';
+import { segmentedBorderBackground } from '~/lib/memberColor';
 import {
   isInRoom,
   isSelected,
-  pickersBySetId,
+  pickerMemberIdsBySetId,
   roomUsesAttribution,
   selections,
   toggleSelection,
@@ -20,9 +22,23 @@ type Props = {
 
 export function SetCard({ set, dayStartMin, pxPerMin, conflictedIds }: Props) {
   const mine = computed(() => selections.value.has(set.id));
+  const borderPickerIds = computed(() => {
+    if (!isInRoom.value || !roomUsesAttribution.value) return [];
+    const ids = pickerMemberIdsBySetId.value.get(set.id) ?? [];
+    const mineId = getOrCreateMemberId();
+    if (!mine.value) return ids.filter((id) => id !== mineId);
+    return ids;
+  });
   const othersPicked = computed(() => {
     if (!isInRoom.value || !roomUsesAttribution.value) return false;
-    return pickersBySetId.value.has(set.id) && !mine.value;
+    const mineId = getOrCreateMemberId();
+    return borderPickerIds.value.some((id) => id !== mineId);
+  });
+  const useSegmentedBorder = computed(() => {
+    const ids = borderPickerIds.value;
+    if (!isInRoom.value || !roomUsesAttribution.value) return false;
+    if (!mine.value) return ids.length > 0;
+    return ids.length > 1;
   });
   const isConflicted = computed(() => isSelected(set.id) && conflictedIds.has(set.id));
 
@@ -32,18 +48,28 @@ export function SetCard({ set, dayStartMin, pxPerMin, conflictedIds }: Props) {
   const selected = mine.value;
   const othersOnly = othersPicked.value;
   const conflict = isConflicted.value;
+  const segmented = useSegmentedBorder.value;
 
   const cls = [
     'set-card',
-    'absolute top-1 bottom-1 select-none overflow-hidden',
-    'rounded-sm border-2 transition-transform',
+    'absolute top-1 bottom-1 select-none overflow-visible',
+    'rounded-sm transition-transform',
+    segmented ? 'border-[3px] border-transparent' : 'border-2',
     selected
-      ? 'border-ink bg-neon text-ink shadow-[3px_3px_0_var(--color-ink)] rotate-[-1deg] z-20'
+      ? [
+          'text-ink shadow-[3px_3px_0_var(--color-ink)] rotate-[-1deg] z-20',
+          segmented ? '' : 'border-ink bg-neon',
+        ].join(' ')
       : othersOnly
-        ? 'border-neon/80 bg-ink/90 text-paper hover:bg-blood hover:-translate-y-0.5 z-15 ring-1 ring-neon/40'
+        ? ['text-paper hover:bg-blood hover:-translate-y-0.5 z-15', segmented ? '' : 'bg-ink'].join(' ')
         : 'border-ink bg-ink text-paper hover:bg-blood hover:-translate-y-0.5 z-10',
     conflict ? 'ring-4 ring-blood' : '',
   ].join(' ');
+
+  const fill = selected ? 'var(--color-neon)' : 'var(--color-ink)';
+  const borderBackground = segmented
+    ? segmentedBorderBackground(borderPickerIds.value, fill)
+    : null;
 
   const linkCls =
     'font-mono text-[0.55rem] leading-none opacity-80 hover:opacity-100 underline-offset-2 hover:underline';
@@ -51,10 +77,14 @@ export function SetCard({ set, dayStartMin, pxPerMin, conflictedIds }: Props) {
   return (
     <div
       class={cls}
-      style={{ left: `${leftPx}px`, width: `${Math.max(widthPx, 64)}px` }}
+      style={{
+        left: `${leftPx}px`,
+        width: `${Math.max(widthPx, 64)}px`,
+        ...(borderBackground ? { background: borderBackground } : {}),
+      }}
       title={`${set.artist} ${formatRange(set.start, set.end)}`}
     >
-      <div class="relative flex h-full flex-col justify-between px-2 py-1 gap-0.5">
+      <div class="relative flex h-full flex-col justify-between overflow-hidden rounded-[inherit] px-2 py-1 gap-0.5">
         <div
           role="button"
           tabIndex={0}
