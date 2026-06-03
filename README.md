@@ -7,10 +7,10 @@ Built with Astro 5 + Preact + Tailwind 4. Fully static, no backend — selection
 ## Scripts
 
 ```bash
-npm run dev      # local dev at http://localhost:4321/
-npm run scrape   # refresh src/data/lineup.json from rockforpeople.cz
-npm run build    # static output in dist/, deploy anywhere
-npm run check    # type-check
+pnpm run dev      # local dev at http://localhost:4321/
+pnpm run scrape   # refresh src/data/lineup.json from rockforpeople.cz
+pnpm run build    # static output in dist/, deploy anywhere
+pnpm run check    # type-check
 npx tsx scripts/verify.ts   # smoke tests
 ```
 
