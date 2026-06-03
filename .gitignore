@@ -22,3 +22,7 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# Supabase CLI (link state, local temp — not migrations)
+supabase/.branches
+supabase/.temp

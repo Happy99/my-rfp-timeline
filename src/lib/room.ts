@@ -8,10 +8,23 @@ const SESSION_KEY = 'rfp-2026:room:v1';
 
 export type RoomSyncState = 'idle' | 'connecting' | 'synced' | 'error' | 'offline';
 
+export type RoomPick = {
+  set_id: string;
+  member_id: string;
+};
+
+export type RoomState = {
+  picks: RoomPick[];
+  members: Record<string, string>;
+  legacyIds: string[];
+};
+
 export type FestivalRoomRow = {
   code: string;
   festival: string;
   ids: string[];
+  picks: RoomPick[];
+  members: Record<string, string>;
   updated_at: string;
 };
 
@@ -36,13 +49,45 @@ function parseIds(value: unknown): string[] {
   return value.filter((x): x is string => typeof x === 'string');
 }
 
+function parsePicks(value: unknown): RoomPick[] {
+  if (!Array.isArray(value)) return [];
+  const out: RoomPick[] = [];
+  for (const item of value) {
+    if (!item || typeof item !== 'object') continue;
+    const pick = item as Record<string, unknown>;
+    if (typeof pick.set_id === 'string' && typeof pick.member_id === 'string') {
+      out.push({ set_id: pick.set_id, member_id: pick.member_id });
+    }
+  }
+  return out;
+}
+
+function parseMembers(value: unknown): Record<string, string> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const out: Record<string, string> = {};
+  for (const [key, val] of Object.entries(value as Record<string, unknown>)) {
+    if (typeof val === 'string') out[key] = val;
+  }
+  return out;
+}
+
 function rowFromRecord(row: Record<string, unknown>): FestivalRoomRow | null {
   if (typeof row.code !== 'string' || typeof row.festival !== 'string') return null;
   return {
     code: row.code,
     festival: row.festival,
     ids: parseIds(row.ids),
+    picks: parsePicks(row.picks),
+    members: parseMembers(row.members),
     updated_at: typeof row.updated_at === 'string' ? row.updated_at : '',
+  };
+}
+
+export function roomStateFromRow(row: FestivalRoomRow): RoomState {
+  return {
+    picks: row.picks,
+    members: row.members,
+    legacyIds: row.picks.length > 0 ? [] : row.ids,
   };
 }
 
@@ -94,8 +139,8 @@ export async function createRoom(): Promise<FestivalRoomRow> {
     const code = generateRoomCode();
     const { data, error } = await supabase
       .from('festival_rooms')
-      .insert({ code, festival: FESTIVAL_TAG, ids: [] })
-      .select('code, festival, ids, updated_at')
+      .insert({ code, festival: FESTIVAL_TAG, ids: [], picks: [], members: {} })
+      .select('code, festival, ids, picks, members, updated_at')
       .single();
 
     if (!error && data) {
@@ -116,7 +161,7 @@ export async function fetchRoom(code: string): Promise<FestivalRoomRow> {
   const supabase = getSupabase();
   const { data, error } = await supabase
     .from('festival_rooms')
-    .select('code, festival, ids, updated_at')
+    .select('code, festival, ids, picks, members, updated_at')
     .eq('code', normalized)
     .maybeSingle();
 
@@ -131,24 +176,59 @@ export async function fetchRoom(code: string): Promise<FestivalRoomRow> {
   return row;
 }
 
-export async function togglePickRemote(code: string, setId: string): Promise<string[]> {
+export async function upsertMemberRemote(
+  code: string,
+  memberId: string,
+  displayName: string,
+): Promise<Record<string, string>> {
+  const supabase = getSupabase();
+  const { data, error } = await supabase.rpc('upsert_member', {
+    p_code: normalizeRoomCode(code),
+    p_member_id: memberId,
+    p_display_name: displayName,
+  });
+  if (error) throw new Error(error.message);
+  return parseMembers(data);
+}
+
+export async function togglePickRemote(
+  code: string,
+  setId: string,
+  memberId: string,
+): Promise<RoomPick[]> {
   const supabase = getSupabase();
   const { data, error } = await supabase.rpc('toggle_pick', {
     p_code: normalizeRoomCode(code),
     p_set_id: setId,
+    p_member_id: memberId,
   });
   if (error) throw new Error(error.message);
-  return parseIds(data);
+  return parsePicks(data);
 }
 
-export async function setRoomIdsRemote(code: string, ids: string[]): Promise<string[]> {
+export async function clearMemberPicksRemote(code: string, memberId: string): Promise<RoomPick[]> {
   const supabase = getSupabase();
-  const { data, error } = await supabase.rpc('set_room_ids', {
+  const { data, error } = await supabase.rpc('clear_member_picks', {
     p_code: normalizeRoomCode(code),
-    p_ids: ids,
+    p_member_id: memberId,
   });
   if (error) throw new Error(error.message);
-  return parseIds(data);
+  return parsePicks(data);
+}
+
+export async function setMemberPicksRemote(
+  code: string,
+  memberId: string,
+  setIds: string[],
+): Promise<RoomPick[]> {
+  const supabase = getSupabase();
+  const { data, error } = await supabase.rpc('set_member_picks', {
+    p_code: normalizeRoomCode(code),
+    p_member_id: memberId,
+    p_set_ids: setIds,
+  });
+  if (error) throw new Error(error.message);
+  return parsePicks(data);
 }
 
 export function unsubscribeRoom(): void {
@@ -161,7 +241,7 @@ export function unsubscribeRoom(): void {
 
 export function subscribeRoom(
   code: string,
-  onIds: (ids: string[]) => void,
+  onState: (state: RoomState) => void,
   onStatus: (state: RoomSyncState, message?: string) => void,
 ): void {
   if (!isSupabaseConfigured()) {
@@ -187,7 +267,7 @@ export function subscribeRoom(
       },
       (payload) => {
         const row = rowFromRecord((payload.new ?? {}) as Record<string, unknown>);
-        if (row) onIds(row.ids);
+        if (row) onState(roomStateFromRow(row));
       },
     )
     .subscribe((status, err) => {

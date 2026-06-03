@@ -1,6 +1,13 @@
 import type { Set as FestSet } from '~/data/schema';
 import { spotifySearchUrl, youtubeMusicSearchUrl } from '~/lib/musicLinks';
-import { selections, toggleSelection } from '~/lib/store';
+import {
+  isInRoom,
+  isSelected,
+  pickersBySetId,
+  roomUsesAttribution,
+  selections,
+  toggleSelection,
+} from '~/lib/store';
 import { computed } from '@preact/signals';
 import { formatRange, absoluteMin, durationMin } from '~/lib/time';
 
@@ -12,13 +19,18 @@ type Props = {
 };
 
 export function SetCard({ set, dayStartMin, pxPerMin, conflictedIds }: Props) {
-  const isSelected = computed(() => selections.value.has(set.id));
-  const isConflicted = computed(() => isSelected.value && conflictedIds.has(set.id));
+  const mine = computed(() => selections.value.has(set.id));
+  const othersPicked = computed(() => {
+    if (!isInRoom.value || !roomUsesAttribution.value) return false;
+    return pickersBySetId.value.has(set.id) && !mine.value;
+  });
+  const isConflicted = computed(() => isSelected(set.id) && conflictedIds.has(set.id));
 
   const leftPx = (absoluteMin(set) - dayStartMin) * pxPerMin;
   const widthPx = durationMin(set.start, set.end, set.crossesMidnight) * pxPerMin;
 
-  const selected = isSelected.value;
+  const selected = mine.value;
+  const othersOnly = othersPicked.value;
   const conflict = isConflicted.value;
 
   const cls = [
@@ -27,7 +39,9 @@ export function SetCard({ set, dayStartMin, pxPerMin, conflictedIds }: Props) {
     'rounded-sm border-2 transition-transform',
     selected
       ? 'border-ink bg-neon text-ink shadow-[3px_3px_0_var(--color-ink)] rotate-[-1deg] z-20'
-      : 'border-ink bg-ink text-paper hover:bg-blood hover:-translate-y-0.5 z-10',
+      : othersOnly
+        ? 'border-neon/80 bg-ink/90 text-paper hover:bg-blood hover:-translate-y-0.5 z-15 ring-1 ring-neon/40'
+        : 'border-ink bg-ink text-paper hover:bg-blood hover:-translate-y-0.5 z-10',
     conflict ? 'ring-4 ring-blood' : '',
   ].join(' ');
 
@@ -57,10 +71,10 @@ export function SetCard({ set, dayStartMin, pxPerMin, conflictedIds }: Props) {
             <span class="font-mono text-[0.6rem] opacity-70 mt-0.5 shrink-0">{set.country}</span>
           )}
         </div>
-        <div class="relative z-10 pointer-events-none flex items-center justify-between font-mono text-[0.7rem] leading-none opacity-90 shrink-0">
-          <span class="tabular-nums">{formatRange(set.start, set.end)}</span>
+        <div class="relative z-10 pointer-events-none flex items-center justify-between font-mono text-[0.7rem] leading-none opacity-90 shrink-0 gap-1">
+          <span class="tabular-nums shrink-0">{formatRange(set.start, set.end)}</span>
           {conflict && (
-            <span class="font-display text-[0.65rem] tracking-tighter text-blood bg-paper px-1 -mr-1" title="Time conflict">
+            <span class="font-display text-[0.65rem] tracking-tighter text-blood bg-paper px-1 -mr-1 shrink-0" title="Time conflict">
               ⚠ CLASH
             </span>
           )}

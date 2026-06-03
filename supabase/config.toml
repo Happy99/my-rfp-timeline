@@ -1,0 +1,23 @@
+# Supabase CLI config (run commands from repo root: npm / project root, not inside supabase/).
+# See: https://supabase.com/docs/guides/cli
+
+project_id = "my-rfp-timeline"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+
+[studio]
+enabled = true
+port = 54323
+
+[realtime]
+enabled = true

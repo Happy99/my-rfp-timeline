@@ -21,20 +21,27 @@ Re-run `npm run scrape` whenever the festival updates the schedule, then rebuild
 Without Supabase env vars, the app works as before (solo + JSON backup only).
 
 1. Create a [Supabase](https://supabase.com) project.
-2. In the SQL editor, run [`supabase/migrations/001_festival_rooms.sql`](supabase/migrations/001_festival_rooms.sql) (table, RLS, `toggle_pick` / `set_room_ids` RPCs, Realtime publication).
+2. Apply the migrations in order (pick one):
+   - **Dashboard:** SQL Editor → paste and run each file in [`supabase/migrations/`](supabase/migrations/) (oldest timestamp first).
+   - **CLI** (from repo root, after `supabase login` and `supabase link`): `supabase db push`
 3. Copy **Project URL** and **anon public** key from Project Settings → API.
 4. Copy [`.env.example`](.env.example) to `.env` and fill in `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY`.
 5. Restart `npm run dev` or set the same variables on your static host (Cloudflare Pages, Netlify, etc.) before `npm run build`.
 
 The anon key is meant to be public in the browser; access is limited by Row Level Security on `festival_rooms`. Room codes are short random strings — fine for friends, not for secrets.
 
+In a group room, each person picks a display name (or uses **Random name**). Set cards show who picked what (e.g. `Alice · Bob`). Conflicts are computed across everyone’s picks. Export and JSON backup still contain **your** picks only.
+
 ### Manual test checklist
 
 - [ ] Two browsers/tabs open the same invite link (`?room=CODE`); toggling a set on one updates the other.
-- [ ] Refresh keeps the shared list (Postgres + session).
+- [ ] Tab A “Alice”, tab B “Bob” — both pick the same set → both names on the card.
+- [ ] Alice unpicks → Bob’s name remains on that set.
+- [ ] Random name → stored and visible to others after pick.
+- [ ] Refresh keeps the shared list and your name (Postgres + session + localStorage).
 - [ ] **Leave group** returns to solo mode; picks remain on the device and save to `localStorage` again.
-- [ ] Joining a room with existing local picks shows a confirm dialog, then replaces with the group list.
-- [ ] Import/clear in a room updates everyone’s shared list.
+- [ ] Joining with local picks uploads them under your name (confirm dialog).
+- [ ] Import/clear in a room updates your picks only; others’ picks stay.
 
 ## Disclaimer
 

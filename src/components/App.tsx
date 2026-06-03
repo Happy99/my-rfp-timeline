@@ -3,11 +3,19 @@ import { useState, useMemo, useEffect, useRef } from 'preact/hooks';
 import { computed } from '@preact/signals';
 import { isSupabaseConfigured } from '~/lib/supabase';
 import { clearRoomFromUrl, readRoomFromUrl, readSessionRoomCode } from '~/lib/room';
-import { joinRoom, resumeRoomFromSession, roomCode, selections } from '~/lib/store';
+import { getDisplayName } from '~/lib/member';
+import {
+  conflictSelectionIds,
+  joinRoom,
+  resumeRoomFromSession,
+  roomCode,
+  selections,
+} from '~/lib/store';
 import { findConflicts, conflictedIds } from '~/lib/conflicts';
 import { DaySwitcher } from './DaySwitcher';
 import { Timeline } from './Timeline';
 import { SelectionPanel } from './SelectionPanel';
+import { GroupRoomModal } from './GroupRoomModal';
 
 type Props = { lineup: Lineup };
 
@@ -18,6 +26,8 @@ export function App({ lineup }: Props) {
   }, [lineup]);
 
   const [activeDate, setActiveDate] = useState(initialDate);
+  const [showNameGate, setShowNameGate] = useState(false);
+  const [pendingRoomCode, setPendingRoomCode] = useState<string | null>(null);
   const activeDay = lineup.days.find((d) => d.date === activeDate) ?? lineup.days[0]!;
   const roomBootstrapped = useRef(false);
 
@@ -28,19 +38,31 @@ export function App({ lineup }: Props) {
     void (async () => {
       const fromUrl = readRoomFromUrl();
       if (fromUrl) {
-        const result = await joinRoom(fromUrl);
+        const name = getDisplayName();
+        if (!name) {
+          setPendingRoomCode(fromUrl);
+          setShowNameGate(true);
+          return;
+        }
+        const result = await joinRoom(fromUrl, name, { skipConfirm: true });
         if (!result.ok && result.cancelled) clearRoomFromUrl();
         return;
       }
       if (roomCode.value) return;
       const fromSession = readSessionRoomCode();
       if (fromSession) {
-        await resumeRoomFromSession(fromSession);
+        const name = getDisplayName();
+        if (!name) {
+          setPendingRoomCode(fromSession);
+          setShowNameGate(true);
+          return;
+        }
+        await resumeRoomFromSession(fromSession, name);
       }
     })();
   }, []);
 
-  const conflicts = computed(() => findConflicts(lineup.days, selections.value));
+  const conflicts = computed(() => findConflicts(lineup.days, conflictSelectionIds.value));
   const conflictIds = computed(() => conflictedIds(conflicts.value));
 
   const pickedPerDay = computed(() => {
@@ -80,6 +102,21 @@ export function App({ lineup }: Props) {
         festival={`${lineup.festival} ${lineup.year}`}
         location={lineup.location}
       />
+
+      {showNameGate && pendingRoomCode && (
+        <GroupRoomModal
+          initialJoinCode={pendingRoomCode}
+          onJoined={() => {
+            setShowNameGate(false);
+            setPendingRoomCode(null);
+          }}
+          onClose={() => {
+            setShowNameGate(false);
+            clearRoomFromUrl();
+            setPendingRoomCode(null);
+          }}
+        />
+      )}
     </div>
   );
 }

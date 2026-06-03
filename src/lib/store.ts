@@ -1,19 +1,29 @@
 import { signal, computed, effect } from '@preact/signals';
 import { FESTIVAL_TAG, SCHEMA_VERSION, STORAGE_KEY } from '~/lib/constants';
-import type { RoomSyncState } from '~/lib/room';
+import {
+  getDisplayName,
+  getOrCreateMemberId,
+  normalizeDisplayName,
+  setDisplayName,
+} from '~/lib/member';
+import type { RoomPick, RoomState, RoomSyncState } from '~/lib/room';
 import {
   clearRoomFromUrl,
   createRoom,
   fetchRoom,
   persistSessionRoomCode,
-  setRoomIdsRemote,
+  roomStateFromRow,
+  roomUrl,
+  setMemberPicksRemote,
   subscribeRoom,
   togglePickRemote,
+  clearMemberPicksRemote,
   unsubscribeRoom,
-  roomUrl,
+  upsertMemberRemote,
 } from '~/lib/room';
 
 export { FESTIVAL_TAG, SCHEMA_VERSION };
+export type { RoomPick };
 
 type Envelope = {
   version: number;
@@ -35,13 +45,61 @@ function loadInitial(): Set<string> {
   }
 }
 
-export const selections = signal<Set<string>>(loadInitial());
+const soloSelections = signal<Set<string>>(loadInitial());
 export const roomCode = signal<string | null>(null);
 export const roomSyncState = signal<RoomSyncState>('idle');
 export const roomSyncError = signal<string | null>(null);
+export const roomPicks = signal<RoomPick[]>([]);
+export const roomMembers = signal<Record<string, string>>({});
+export const legacyRoomIds = signal<string[]>([]);
+
+export const roomUsesAttribution = computed(() => roomPicks.value.length > 0);
+
+export const selections = computed(() => {
+  if (!roomCode.value) return soloSelections.value;
+  if (roomUsesAttribution.value) {
+    const memberId = getOrCreateMemberId();
+    return new Set(
+      roomPicks.value.filter((p) => p.member_id === memberId).map((p) => p.set_id),
+    );
+  }
+  return new Set(legacyRoomIds.value);
+});
 
 export const selectionsCount = computed(() => selections.value.size);
 export const isInRoom = computed(() => roomCode.value !== null);
+
+export const allRoomSetIds = computed(
+  () => new Set(roomPicks.value.map((p) => p.set_id)),
+);
+
+export const pickersBySetId = computed(() => {
+  const members = roomMembers.value;
+  const map = new Map<string, string[]>();
+  for (const pick of roomPicks.value) {
+    const name = members[pick.member_id] ?? 'Unknown';
+    const list = map.get(pick.set_id) ?? [];
+    list.push(name);
+    map.set(pick.set_id, list);
+  }
+  for (const [setId, names] of map) {
+    map.set(setId, [...names].sort((a, b) => a.localeCompare(b)));
+  }
+  return map;
+});
+
+export const roomMemberCount = computed(() => {
+  const ids = new Set(roomPicks.value.map((p) => p.member_id));
+  return ids.size;
+});
+
+export const myDisplayName = computed(() => getDisplayName());
+
+export const conflictSelectionIds = computed(() => {
+  if (!roomCode.value) return selections.value;
+  if (roomUsesAttribution.value) return allRoomSetIds.value;
+  return new Set(legacyRoomIds.value);
+});
 
 let applyingRemote = false;
 let debounceHandle: number | null = null;
@@ -49,7 +107,7 @@ let debounceHandle: number | null = null;
 if (typeof window !== 'undefined') {
   effect(() => {
     if (roomCode.value !== null) return;
-    const ids = [...selections.value].sort();
+    const ids = [...soloSelections.value].sort();
     if (debounceHandle !== null) window.clearTimeout(debounceHandle);
     debounceHandle = window.setTimeout(() => {
       const envelope: Envelope = { version: SCHEMA_VERSION, festival: FESTIVAL_TAG, ids };
@@ -62,9 +120,11 @@ if (typeof window !== 'undefined') {
   });
 }
 
-export function applyRemoteIds(ids: string[]): void {
+export function applyRemoteRoomState(state: RoomState): void {
   applyingRemote = true;
-  selections.value = new Set(ids.filter((s) => typeof s === 'string'));
+  roomPicks.value = state.picks;
+  roomMembers.value = state.members;
+  legacyRoomIds.value = state.legacyIds;
   applyingRemote = false;
 }
 
@@ -73,67 +133,84 @@ function setRoomSync(state: RoomSyncState, message: string | null = null): void 
   roomSyncError.value = message;
 }
 
-async function persistRoomIds(ids: string[]): Promise<void> {
+function resetRoomState(): void {
+  roomPicks.value = [];
+  roomMembers.value = {};
+  legacyRoomIds.value = [];
+}
+
+async function registerMember(displayName: string): Promise<void> {
   const code = roomCode.value;
-  if (!code || applyingRemote) return;
-  try {
-    await setRoomIdsRemote(code, [...ids].sort());
-  } catch (err) {
-    setRoomSync('error', err instanceof Error ? err.message : 'Failed to sync picks.');
-  }
+  if (!code) return;
+  const memberId = getOrCreateMemberId();
+  const normalized = normalizeDisplayName(displayName);
+  setDisplayName(normalized);
+  const members = await upsertMemberRemote(code, memberId, normalized);
+  roomMembers.value = members;
 }
 
 async function persistToggle(setId: string): Promise<void> {
   const code = roomCode.value;
   if (!code || applyingRemote) return;
   try {
-    await togglePickRemote(code, setId);
+    const picks = await togglePickRemote(code, setId, getOrCreateMemberId());
+    roomPicks.value = picks;
   } catch (err) {
     setRoomSync('error', err instanceof Error ? err.message : 'Failed to sync pick.');
   }
 }
 
-export async function enterRoom(code: string, ids: string[]): Promise<void> {
+export async function enterRoom(code: string, state: RoomState, displayName: string): Promise<void> {
   const normalized = code.trim().toUpperCase();
   unsubscribeRoom();
   roomCode.value = normalized;
-  applyRemoteIds(ids);
+  applyRemoteRoomState(state);
   persistSessionRoomCode(normalized);
   if (typeof window !== 'undefined') {
     const url = new URL(window.location.href);
     url.searchParams.set('room', normalized);
     window.history.replaceState({}, '', url.pathname + url.search + url.hash);
   }
+  await registerMember(displayName);
   subscribeRoom(
     normalized,
-    (remoteIds) => applyRemoteIds(remoteIds),
-    (state, message) => setRoomSync(state, message ?? null),
+    (remoteState) => applyRemoteRoomState(remoteState),
+    (syncState, message) => setRoomSync(syncState, message ?? null),
   );
 }
 
 export function leaveRoom(): void {
   unsubscribeRoom();
   roomCode.value = null;
+  resetRoomState();
   setRoomSync('idle', null);
   persistSessionRoomCode(null);
   clearRoomFromUrl();
 }
 
 const JOIN_CONFIRM_MSG =
-  'Joining this group will replace your picks in this browser with the shared group list. Continue?';
+  'Joining will add your local picks to the group under your name. Continue?';
 
 export async function joinRoom(
   code: string,
-  options: { skipConfirm?: boolean } = {},
+  displayName: string,
+  options: { skipConfirm?: boolean; skipUpload?: boolean } = {},
 ): Promise<{ ok: true } | { ok: false; reason: string; cancelled?: boolean }> {
-  if (selectionsCount.value > 0 && !options.skipConfirm) {
+  const localCount = soloSelections.value.size;
+  if (localCount > 0 && !options.skipConfirm) {
     if (!window.confirm(JOIN_CONFIRM_MSG)) {
       return { ok: false, reason: 'Cancelled.', cancelled: true };
     }
   }
   try {
     const row = await fetchRoom(code);
-    await enterRoom(row.code, row.ids);
+    const state = roomStateFromRow(row);
+    await enterRoom(row.code, state, displayName);
+    if (!options.skipUpload && localCount > 0) {
+      const ids = [...soloSelections.value].sort();
+      const picks = await setMemberPicksRemote(row.code, getOrCreateMemberId(), ids);
+      roomPicks.value = picks;
+    }
     return { ok: true };
   } catch (err) {
     const reason = err instanceof Error ? err.message : 'Failed to join room.';
@@ -142,10 +219,13 @@ export async function joinRoom(
   }
 }
 
-export async function resumeRoomFromSession(code: string): Promise<boolean> {
+export async function resumeRoomFromSession(
+  code: string,
+  displayName: string,
+): Promise<boolean> {
   try {
     const row = await fetchRoom(code);
-    await enterRoom(row.code, row.ids);
+    await enterRoom(row.code, roomStateFromRow(row), displayName);
     return true;
   } catch {
     leaveRoom();
@@ -153,16 +233,37 @@ export async function resumeRoomFromSession(code: string): Promise<boolean> {
   }
 }
 
+export async function updateMemberName(displayName: string): Promise<void> {
+  const normalized = normalizeDisplayName(displayName);
+  setDisplayName(normalized);
+  if (roomCode.value) {
+    await registerMember(normalized);
+  }
+}
+
 export function toggleSelection(id: string): void {
-  const had = selections.value.has(id);
-  const next = new Set(selections.value);
+  if (roomCode.value) {
+    if (applyingRemote) return;
+    const memberId = getOrCreateMemberId();
+    if (roomUsesAttribution.value) {
+      const exists = roomPicks.value.some((p) => p.set_id === id && p.member_id === memberId);
+      if (exists) {
+        roomPicks.value = roomPicks.value.filter(
+          (p) => !(p.set_id === id && p.member_id === memberId),
+        );
+      } else {
+        roomPicks.value = [...roomPicks.value, { set_id: id, member_id: memberId }];
+      }
+    }
+    void persistToggle(id);
+    return;
+  }
+
+  const had = soloSelections.value.has(id);
+  const next = new Set(soloSelections.value);
   if (had) next.delete(id);
   else next.add(id);
-  selections.value = next;
-
-  if (roomCode.value && !applyingRemote) {
-    void persistToggle(id);
-  }
+  soloSelections.value = next;
 }
 
 export function isSelected(id: string): boolean {
@@ -170,8 +271,16 @@ export function isSelected(id: string): boolean {
 }
 
 export async function clearAllSelections(): Promise<void> {
-  selections.value = new Set();
-  if (roomCode.value) await persistRoomIds([]);
+  if (roomCode.value) {
+    try {
+      const picks = await clearMemberPicksRemote(roomCode.value, getOrCreateMemberId());
+      roomPicks.value = picks;
+    } catch (err) {
+      setRoomSync('error', err instanceof Error ? err.message : 'Failed to clear picks.');
+    }
+    return;
+  }
+  soloSelections.value = new Set();
 }
 
 export function exportSelectionsAsJson(): string {
@@ -211,10 +320,25 @@ export async function importSelectionsFromJson(
     return { ok: false, reason: `File is for "${env.festival}", expected "${FESTIVAL_TAG}".` };
   }
   const incoming = new Set(env.ids.filter((s) => typeof s === 'string'));
-  const next = mode === 'merge' ? new Set([...selections.value, ...incoming]) : incoming;
-  selections.value = next;
+  const next =
+    mode === 'merge' ? new Set([...selections.value, ...incoming]) : incoming;
+
   if (roomCode.value) {
-    await persistRoomIds([...next]);
+    try {
+      const picks = await setMemberPicksRemote(
+        roomCode.value,
+        getOrCreateMemberId(),
+        [...next].sort(),
+      );
+      roomPicks.value = picks;
+    } catch (err) {
+      return {
+        ok: false,
+        reason: err instanceof Error ? err.message : 'Failed to import picks.',
+      };
+    }
+  } else {
+    soloSelections.value = next;
   }
   return { ok: true, count: incoming.size, mode };
 }
@@ -223,15 +347,16 @@ export function getShareableRoomLink(code: string): string {
   return roomUrl(code);
 }
 
-export async function createGroupRoom(): Promise<
-  { ok: true; code: string } | { ok: false; reason: string }
-> {
+export async function createGroupRoom(
+  displayName: string,
+): Promise<{ ok: true; code: string } | { ok: false; reason: string }> {
   try {
     const row = await createRoom();
-    const initialIds = [...selections.value].sort();
-    await enterRoom(row.code, initialIds);
+    const initialIds = [...soloSelections.value].sort();
+    await enterRoom(row.code, roomStateFromRow(row), displayName);
     if (initialIds.length > 0) {
-      await setRoomIdsRemote(row.code, initialIds);
+      const picks = await setMemberPicksRemote(row.code, getOrCreateMemberId(), initialIds);
+      roomPicks.value = picks;
     }
     return { ok: true, code: row.code };
   } catch (err) {
