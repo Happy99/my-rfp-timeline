@@ -1,7 +1,9 @@
 import type { Lineup } from '~/data/schema';
-import { useState, useMemo } from 'preact/hooks';
+import { useState, useMemo, useEffect, useRef } from 'preact/hooks';
 import { computed } from '@preact/signals';
-import { selections } from '~/lib/store';
+import { isSupabaseConfigured } from '~/lib/supabase';
+import { clearRoomFromUrl, readRoomFromUrl, readSessionRoomCode } from '~/lib/room';
+import { joinRoom, resumeRoomFromSession, roomCode, selections } from '~/lib/store';
 import { findConflicts, conflictedIds } from '~/lib/conflicts';
 import { DaySwitcher } from './DaySwitcher';
 import { Timeline } from './Timeline';
@@ -17,6 +19,26 @@ export function App({ lineup }: Props) {
 
   const [activeDate, setActiveDate] = useState(initialDate);
   const activeDay = lineup.days.find((d) => d.date === activeDate) ?? lineup.days[0]!;
+  const roomBootstrapped = useRef(false);
+
+  useEffect(() => {
+    if (!isSupabaseConfigured() || roomBootstrapped.current) return;
+    roomBootstrapped.current = true;
+
+    void (async () => {
+      const fromUrl = readRoomFromUrl();
+      if (fromUrl) {
+        const result = await joinRoom(fromUrl);
+        if (!result.ok && result.cancelled) clearRoomFromUrl();
+        return;
+      }
+      if (roomCode.value) return;
+      const fromSession = readSessionRoomCode();
+      if (fromSession) {
+        await resumeRoomFromSession(fromSession);
+      }
+    })();
+  }, []);
 
   const conflicts = computed(() => findConflicts(lineup.days, selections.value));
   const conflictIds = computed(() => conflictedIds(conflicts.value));

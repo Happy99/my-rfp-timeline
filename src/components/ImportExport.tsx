@@ -3,6 +3,7 @@ import {
   exportSelectionsAsJson,
   importSelectionsFromJson,
   clearAllSelections,
+  isInRoom,
   selections,
 } from '~/lib/store';
 
@@ -39,7 +40,7 @@ export function ImportExportModal({ onClose }: Props) {
     const file = input.files?.[0];
     if (!file) return;
     const text = await file.text();
-    const result = importSelectionsFromJson(text, mode);
+    const result = await importSelectionsFromJson(text, mode);
     if (result.ok) {
       setStatus(`Imported ${result.count} picks (${result.mode}).`);
     } else {
@@ -48,10 +49,10 @@ export function ImportExportModal({ onClose }: Props) {
     input.value = '';
   }
 
-  function handleClear() {
+  async function handleClear() {
     if (window.confirm(`Clear all ${selections.value.size} picks?`)) {
-      clearAllSelections();
-      setStatus('All picks cleared.');
+      await clearAllSelections();
+      setStatus(isInRoom.value ? 'All picks cleared for the group.' : 'All picks cleared.');
     }
   }
 
@@ -74,7 +75,9 @@ export function ImportExportModal({ onClose }: Props) {
         </button>
         <h2 class="font-display text-xl uppercase tracking-tight">Backup / Restore</h2>
         <p class="font-mono text-xs mt-1 text-ink/80">
-          Your picks live in this browser. Use these tools to sync across devices.
+          {isInRoom.value
+            ? 'Import and clear update the shared group list for everyone in the room.'
+            : 'Your picks live in this browser. Use these tools to sync across devices.'}
         </p>
 
         <div class="mt-4 space-y-3">

@@ -4,6 +4,9 @@ import { selections, selectionsCount, toggleSelection } from '~/lib/store';
 import { buildIcs } from '~/lib/ics';
 import { useState } from 'preact/hooks';
 import { ImportExportModal } from './ImportExport';
+import { GroupRoomModal } from './GroupRoomModal';
+import { isInRoom, roomCode, roomSyncState } from '~/lib/store';
+import { isSupabaseConfigured } from '~/lib/supabase';
 
 type Props = {
   days: Day[];
@@ -27,6 +30,8 @@ function downloadFile(name: string, contents: string, mime: string) {
 export function SelectionPanel({ days, conflicts, festival, location }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showGroupModal, setShowGroupModal] = useState(false);
+  const groupEnabled = isSupabaseConfigured();
   const count = selectionsCount.value;
 
   const daysWithPicks = days.filter((d) =>
@@ -65,6 +70,14 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
               </span>
               <span class="font-mono text-xs text-ink/70">
                 {daysWithPicks} day{daysWithPicks === 1 ? '' : 's'}
+                {isInRoom.value && roomCode.value && (
+                  <>
+                    {' · '}
+                    <span class="text-blood font-bold uppercase">
+                      {roomSyncState.value === 'synced' ? 'live' : roomSyncState.value} · {roomCode.value}
+                    </span>
+                  </>
+                )}
                 {conflicts.length > 0 && (
                   <>
                     {' · '}
@@ -153,6 +166,15 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
             >
               📅 Export .ics
             </button>
+            {groupEnabled && (
+              <button
+                type="button"
+                onClick={() => setShowGroupModal(true)}
+                class="flex-1 min-w-[140px] border-2 border-ink bg-paper px-3 py-2 font-display uppercase tracking-tight hover:bg-neon hover:shadow-[3px_3px_0_var(--color-ink)] hover:-translate-y-0.5 transition-transform cursor-pointer"
+              >
+                👥 Plan with friends
+              </button>
+            )}
             <button
               type="button"
               onClick={() => setShowModal(true)}
@@ -165,6 +187,7 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
       </div>
 
       {showModal && <ImportExportModal onClose={() => setShowModal(false)} />}
+      {showGroupModal && <GroupRoomModal onClose={() => setShowGroupModal(false)} />}
     </>
   );
 }
