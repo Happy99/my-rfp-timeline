@@ -4,6 +4,7 @@ A personal companion site for **Rock for People 2026** (10â€“14 June, Hradec KrÃ
 
 Built with Astro 5 + Preact + Tailwind 4. The site is **fully static**; solo picks live in `localStorage` with JSON backup/restore. Optional **group sync** uses Supabase Postgres + Realtime (no custom server).
 
+
 ## Scripts
 
 ```bash
