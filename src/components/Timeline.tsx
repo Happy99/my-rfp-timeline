@@ -73,7 +73,7 @@ export function Timeline({ day, conflictedIds }: Props) {
                   {stage.name}
                 </span>
               </div>
-              <div class="relative" style={{ width: `${totalWidth}px`, height: `${ROW_HEIGHT}px` }}>
+              <div class="relative overflow-visible" style={{ width: `${totalWidth}px`, height: `${ROW_HEIGHT}px` }}>
                 {hours.map((m) => {
                   const left = (m - startMin) * PX_PER_MIN;
                   return (

@@ -1,9 +1,24 @@
 import type { ConflictPair } from '~/lib/conflicts';
 import type { Day } from '~/data/schema';
-import { selections, selectionsCount, toggleSelection } from '~/lib/store';
+import {
+  isInRoom,
+  isSelected,
+  myDisplayName,
+  pickersBySetId,
+  roomCode,
+  roomMemberCount,
+  roomPicks,
+  roomSyncState,
+  roomUsesAttribution,
+  selections,
+  selectionsCount,
+  toggleSelection,
+} from '~/lib/store';
 import { buildIcs } from '~/lib/ics';
 import { useState } from 'preact/hooks';
 import { ImportExportModal } from './ImportExport';
+import { GroupRoomModal } from './GroupRoomModal';
+import { isSupabaseConfigured } from '~/lib/supabase';
 
 type Props = {
   days: Day[];
@@ -27,11 +42,21 @@ function downloadFile(name: string, contents: string, mime: string) {
 export function SelectionPanel({ days, conflicts, festival, location }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showGroupModal, setShowGroupModal] = useState(false);
+  const groupEnabled = isSupabaseConfigured();
   const count = selectionsCount.value;
+  const myName = myDisplayName.value;
 
   const daysWithPicks = days.filter((d) =>
-    d.stages.some((s) => s.sets.some((set) => selections.value.has(set.id))),
+    d.stages.some((s) => s.sets.some((set) => isSelected(set.id))),
   ).length;
+
+  function pickersLabel(setId: string): string | null {
+    if (!isInRoom.value || !roomUsesAttribution.value) return null;
+    const names = pickersBySetId.value.get(setId);
+    if (!names || names.length === 0) return null;
+    return names.join(', ');
+  }
 
   function handleExportIcs() {
     const ics = buildIcs(days, selections.value, { festival, location });
@@ -41,6 +66,11 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
       'text/calendar;charset=utf-8',
     );
   }
+
+  const roomHeaderExtra =
+    isInRoom.value && roomUsesAttribution.value
+      ? ` · ${roomPicks.value.length} total · ${roomMemberCount.value} people`
+      : '';
 
   return (
     <>
@@ -59,21 +89,34 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
             onClick={() => setExpanded((x) => !x)}
             aria-expanded={expanded}
           >
-            <div class="flex items-baseline gap-3">
-              <span class="font-display text-lg uppercase tracking-tight">
+            <div class="flex items-baseline gap-3 min-w-0">
+              <span class="font-display text-lg uppercase tracking-tight shrink-0">
                 <span class="text-blood">{count}</span> picks
               </span>
-              <span class="font-mono text-xs text-ink/70">
+              <span class="font-mono text-xs text-ink/70 truncate">
                 {daysWithPicks} day{daysWithPicks === 1 ? '' : 's'}
+                {isInRoom.value && roomCode.value && (
+                  <>
+                    {' · '}
+                    <span class="text-blood font-bold uppercase">
+                      {roomSyncState.value === 'synced' ? 'live' : roomSyncState.value} ·{' '}
+                      {roomCode.value}
+                      {myName ? ` · ${myName}` : ''}
+                      {roomHeaderExtra}
+                    </span>
+                  </>
+                )}
                 {conflicts.length > 0 && (
                   <>
                     {' · '}
-                    <span class="text-blood font-bold">{conflicts.length} clash{conflicts.length === 1 ? '' : 'es'}</span>
+                    <span class="text-blood font-bold">
+                      {conflicts.length} clash{conflicts.length === 1 ? '' : 'es'}
+                    </span>
                   </>
                 )}
               </span>
             </div>
-            <span class="font-display text-sm">{expanded ? '▼' : '▲'}</span>
+            <span class="font-display text-sm shrink-0">{expanded ? '▼' : '▲'}</span>
           </button>
 
           {expanded && (
@@ -103,7 +146,7 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
                   {days.map((day) => {
                     const dayPicks = day.stages.flatMap((s) =>
                       s.sets
-                        .filter((set) => selections.value.has(set.id))
+                        .filter((set) => isSelected(set.id))
                         .map((set) => ({ set, stage: s.name })),
                     );
                     if (dayPicks.length === 0) return null;
@@ -114,27 +157,42 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
                           {day.shortLabel}
                         </div>
                         <ul class="ml-2 mt-0.5 space-y-0.5 font-mono text-xs">
-                          {dayPicks.map((p) => (
-                            <li key={p.set.id} class="flex items-baseline justify-between gap-2">
-                              <span>
-                                <span class="font-bold">{p.set.artist}</span>{' '}
-                                <span class="text-ink/60">— {p.stage}</span>
-                              </span>
-                              <span class="flex items-center gap-2 shrink-0">
-                                <span class="text-ink/70">
-                                  {p.set.start}–{p.set.end}
+                          {dayPicks.map((p) => {
+                            const who = pickersLabel(p.set.id);
+                            return (
+                              <li key={p.set.id} class="flex items-baseline justify-between gap-2">
+                                <span class="min-w-0">
+                                  <span class="font-bold">{p.set.artist}</span>{' '}
+                                  <span class="text-ink/60">— {p.stage}</span>
+                                  {who && (
+                                    <span class="block text-ink/60 truncate" title={who}>
+                                      {who.split(', ').map((name, i) => (
+                                        <span key={name}>
+                                          {i > 0 && ', '}
+                                          <span class={name === myName ? 'font-bold text-blood' : ''}>
+                                            {name}
+                                          </span>
+                                        </span>
+                                      ))}
+                                    </span>
+                                  )}
                                 </span>
-                                <button
-                                  type="button"
-                                  onClick={() => toggleSelection(p.set.id)}
-                                  class="text-blood font-bold cursor-pointer hover:underline"
-                                  aria-label={`Remove ${p.set.artist}`}
-                                >
-                                  ×
-                                </button>
-                              </span>
-                            </li>
-                          ))}
+                                <span class="flex items-center gap-2 shrink-0">
+                                  <span class="text-ink/70">
+                                    {p.set.start}–{p.set.end}
+                                  </span>
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleSelection(p.set.id)}
+                                    class="text-blood font-bold cursor-pointer hover:underline"
+                                    aria-label={`Remove ${p.set.artist}`}
+                                  >
+                                    ×
+                                  </button>
+                                </span>
+                              </li>
+                            );
+                          })}
                         </ul>
                       </li>
                     );
@@ -153,6 +211,15 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
             >
               📅 Export .ics
             </button>
+            {groupEnabled && (
+              <button
+                type="button"
+                onClick={() => setShowGroupModal(true)}
+                class="flex-1 min-w-[140px] border-2 border-ink bg-paper px-3 py-2 font-display uppercase tracking-tight hover:bg-neon hover:shadow-[3px_3px_0_var(--color-ink)] hover:-translate-y-0.5 transition-transform cursor-pointer"
+              >
+                👥 Plan with friends
+              </button>
+            )}
             <button
               type="button"
               onClick={() => setShowModal(true)}
@@ -165,6 +232,7 @@ export function SelectionPanel({ days, conflicts, festival, location }: Props) {
       </div>
 
       {showModal && <ImportExportModal onClose={() => setShowModal(false)} />}
+      {showGroupModal && <GroupRoomModal onClose={() => setShowGroupModal(false)} />}
     </>
   );
 }
